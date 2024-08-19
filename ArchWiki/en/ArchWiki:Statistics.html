@@ -1,0 +1,9731 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-feature-night-mode-disabled skin-theme-clientpref-day vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>ArchWiki:Statistics - ArchWiki</title>
+<link rel="stylesheet" href="../ArchWikiOffline.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<meta name="generator" content="MediaWiki 1.42.1">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="icon" href="/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="ArchWiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.archlinux.org/api.php?action=rsd">
+<link rel="license" href="https://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="ArchWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-4 ns-subject page-ArchWiki_Statistics rootpage-ArchWiki_Statistics skin-vector-2022 action-view skin--responsive">
+<a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text" class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Beginning</div>
+			</a>
+		</li>
+		<li id="toc-User_statistics" class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#User_statistics">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>User statistics</div>
+		</a>
+		
+		<ul id="toc-User_statistics-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Global_statistics" class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Global_statistics">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Global statistics</div>
+		</a>
+		
+			<button aria-controls="toc-Global_statistics-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Global statistics subsection</span>
+			</button>
+		
+		<ul id="toc-Global_statistics-sublist" class="vector-toc-list">
+			<li id="toc-Histograms" class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Histograms">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1</span>Histograms</div>
+			</a>
+			
+			<ul id="toc-Histograms-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Maintenance_statistics" class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Maintenance_statistics">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Maintenance statistics</div>
+		</a>
+		
+		<ul id="toc-Maintenance_statistics-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main" style="margin: 0">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left">
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox " aria-label="Toggle the table of contents">
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">
+<span class="mw-page-title-namespace">ArchWiki</span><span class="mw-page-title-separator">:</span><span class="mw-page-title-main">Statistics</span>
+</h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang">
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 1 language">
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-1" aria-hidden="true"><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">1 language</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://wiki.archlinux.jp/index.php/ArchWiki:%E7%B5%B1%E8%A8%88" title="ArchWiki:統計 – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li>
+			</ul>
+			
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-client-prefs-landmark" aria-label="Appearance">
+						</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From ArchWiki</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content">
+<div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr">
+<p>This page features statistics about the activity in the wiki. See also <a href="../Special:Statistics.html" title="Special:Statistics">Special:Statistics</a> and <a rel="nofollow" class="external text" href="https://wikiapiary.com/wiki/ArchWiki">wikiapiary.com</a>.
+</p>
+<p>This page has been last updated by <a href="../User:Lahwaacz.bot.html" title="User:Lahwaacz.bot">Lahwaacz.bot</a> on 2024-08-01.
+</p>
+<meta property="mw:PageProp/toc">
+<h2><span class="mw-headline" id="User_statistics">User statistics</span></h2>
+<p>This table shows the 71 users with at least 1000 edits in total, combined with the 299 users who made at least 1 edit in the 30 days between 2024-07-02 and 2024-08-01 (00:00 UTC), for a total of 356 users.
+</p>
+<p>The meaning of the additional columns is:
+</p>
+<ul>
+<li>
+<b>Roles</b> — a human-readable representation of the most relevant <a href="../en/ArchWiki:Access_levels_and_roles.html" title="ArchWiki:Access levels and roles">access levels and roles</a>.</li>
+<li>
+<b>Recent</b> — the number of edits made in the past 30 days. Includes only normal edits, not special actions such as moving a page.</li>
+<li>
+<b>Total</b> — the total number of edits made since the registration. Includes only normal edits (including deleted ones), special actions are not counted.</li>
+<li>
+<b>Longest streak</b> — the length of the longest recorded streak in days. The details for the streak are provided as tooltips.</li>
+<li>
+<b>Current streak</b> — the length of the last recorded streak in days. The details for the streak are provided as tooltips.</li>
+<li>
+<b>Avg. (total)</b> — the average of edits per day since the user's registration, calculated as the total number of edits divided by the number of days since the registration date until today.</li>
+<li>
+<b>Avg. (active)</b> — the <i>active</i> average of edits per day between the user's first and last edits, calculated as the total number of edits divided by the number of days between the user's first and last edits.</li>
+</ul>
+<table class="wikitable sortable" border="1">
+<tbody>
+<tr>
+<th>User
+</th>
+<th>Registration
+</th>
+<th>Roles
+</th>
+<th>Recent
+</th>
+<th>Total
+</th>
+<th>Longest<br>streak
+</th>
+<th>Current<br>streak
+</th>
+<th>Avg.<br>(total)
+</th>
+<th>Avg.<br>(active)
+</th>
+</tr>
+<tr>
+<td>
+<a href="../User:Lahwaacz.bot.html" title="User:Lahwaacz.bot">Lahwaacz.bot</a>
+</td>
+<td>2014-02-19 18:44:03
+</td>
+<td>
+<a href="../en/ArchWiki:Bots.html" title="ArchWiki:Bots">Bot</a>
+</td>
+<td>626
+</td>
+<td>88537
+</td>
+<td>
+<span title="83 days, from 2024-02-19 to 2024-05-12 (1526 edits)">83</span>
+</td>
+<td>
+<span title="4 days, from 2024-07-27 to 2024-07-31 (535 edits)">4</span>
+</td>
+<td>23.20
+</td>
+<td>23.21
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Erus_Iluvatar.html" title="User:Erus Iluvatar">Erus Iluvatar</a>
+</td>
+<td>2011-01-11 10:09:22
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>177
+</td>
+<td>26922
+</td>
+<td>
+<span title="975 days, from 2021-11-30 to 2024-07-31 (26696 edits)">975</span>
+</td>
+<td>
+<span title="975 days, from 2021-11-30 to 2024-07-31 (26696 edits)">975</span>
+</td>
+<td>5.44
+</td>
+<td>5.44
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Nl6720.html" title="User:Nl6720">Nl6720</a>
+</td>
+<td>2015-09-04 15:15:59
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>, <a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Bureaucrats">Bureaucrat</a>
+</td>
+<td>139
+</td>
+<td>13643
+</td>
+<td>
+<span title="2461 days, from 2017-11-04 to 2024-07-31 (12374 edits)">2461</span>
+</td>
+<td>
+<span title="2461 days, from 2017-11-04 to 2024-07-31 (12374 edits)">2461</span>
+</td>
+<td>4.19
+</td>
+<td>4.27
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Lahwaacz.html" title="User:Lahwaacz">Lahwaacz</a>
+</td>
+<td>2012-01-24 23:28:13
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>, <a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Bureaucrats">Bureaucrat</a>, <a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>
+</td>
+<td>55
+</td>
+<td>33655
+</td>
+<td>
+<span title="161 days, from 2017-11-01 to 2018-04-10 (1284 edits)">161</span>
+</td>
+<td>0
+</td>
+<td>7.36
+</td>
+<td>7.36
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Andrei_Korshikov.html" title="User:Andrei Korshikov">Andrei Korshikov</a>
+</td>
+<td>2022-03-21 19:20:08
+</td>
+<td>
+</td>
+<td>55
+</td>
+<td>604
+</td>
+<td>
+<span title="16 days, from 2024-04-09 to 2024-04-25 (237 edits)">16</span>
+</td>
+<td>0
+</td>
+<td>0.70
+</td>
+<td>0.70
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Andreymal.html" title="User:Andreymal">Andreymal</a>
+</td>
+<td>2012-07-31 10:39:11
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>47
+</td>
+<td>2165
+</td>
+<td>
+<span title="158 days, from 2021-11-22 to 2022-04-28 (652 edits)">158</span>
+</td>
+<td>0
+</td>
+<td>0.49
+</td>
+<td>0.49
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Cer0.html" title="User:Cer0">Cer0</a>
+</td>
+<td>2020-10-23 03:26:54
+</td>
+<td>
+</td>
+<td>43
+</td>
+<td>158
+</td>
+<td>
+<span title="4 days, from 2024-07-02 to 2024-07-05 (43 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>0.12
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:NetSysFire.html" title="User:NetSysFire">NetSysFire</a>
+</td>
+<td>2020-06-18 19:17:10
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>32
+</td>
+<td>3712
+</td>
+<td>
+<span title="1293 days, from 2021-01-15 to 2024-07-31 (3641 edits)">1293</span>
+</td>
+<td>
+<span title="1293 days, from 2021-01-15 to 2024-07-31 (3641 edits)">1293</span>
+</td>
+<td>2.47
+</td>
+<td>2.47
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:AvidSeeker.html" title="User:AvidSeeker">AvidSeeker</a>
+</td>
+<td>2022-08-30 17:58:21
+</td>
+<td>
+</td>
+<td>22
+</td>
+<td>457
+</td>
+<td>
+<span title="6 days, from 2023-08-25 to 2023-08-30 (50 edits)">6</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (2 edits)">1</span>
+</td>
+<td>0.65
+</td>
+<td>0.65
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Klausenbusk&amp;action=edit&amp;redlink=1" class="new" title="User:Klausenbusk (page does not exist)">Klausenbusk</a>
+</td>
+<td>2018-08-15 16:39:46
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>21
+</td>
+<td>87
+</td>
+<td>
+<span title="3 days, from 2021-03-19 to 2021-03-22 (18 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Scimmia&amp;action=edit&amp;redlink=1" class="new" title="User:Scimmia (page does not exist)">Scimmia</a>
+</td>
+<td>2012-09-25 23:51:17
+</td>
+<td>
+</td>
+<td>20
+</td>
+<td>487
+</td>
+<td>
+<span title="4 days, from 2024-01-08 to 2024-01-11 (11 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>0.11
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:DuckyDuck&amp;action=edit&amp;redlink=1" class="new" title="User:DuckyDuck (page does not exist)">DuckyDuck</a>
+</td>
+<td>2021-05-24 23:12:08
+</td>
+<td>
+</td>
+<td>17
+</td>
+<td>21
+</td>
+<td>
+<span title="2 days, from 2024-07-27 to 2024-07-28 (17 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:LS-Shandong&amp;action=edit&amp;redlink=1" class="new" title="User:LS-Shandong (page does not exist)">LS-Shandong</a>
+</td>
+<td>2024-04-13 08:03:14
+</td>
+<td>
+</td>
+<td>16
+</td>
+<td>48
+</td>
+<td>
+<span title="3 days, from 2024-07-29 to 2024-07-31 (13 edits)">3</span>
+</td>
+<td>
+<span title="3 days, from 2024-07-29 to 2024-07-31 (13 edits)">3</span>
+</td>
+<td>0.44
+</td>
+<td>0.44
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Therealmate&amp;action=edit&amp;redlink=1" class="new" title="User:Therealmate (page does not exist)">Therealmate</a>
+</td>
+<td>2023-07-07 10:10:19
+</td>
+<td>
+</td>
+<td>15
+</td>
+<td>35
+</td>
+<td>
+<span title="1 days, from 2023-07-07 to 2023-07-07 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>0.09
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Supermariofan67&amp;action=edit&amp;redlink=1" class="new" title="User:Supermariofan67 (page does not exist)">Supermariofan67</a>
+</td>
+<td>2019-04-24 20:58:17
+</td>
+<td>
+</td>
+<td>14
+</td>
+<td>43
+</td>
+<td>
+<span title="1 days, from 2019-04-24 to 2019-04-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Ua4000.html" title="User:Ua4000">Ua4000</a>
+</td>
+<td>2016-03-07 19:56:04
+</td>
+<td>
+</td>
+<td>12
+</td>
+<td>277
+</td>
+<td>
+<span title="3 days, from 2024-03-16 to 2024-03-18 (4 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>0.09
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:WhoIsThat%3F&amp;action=edit&amp;redlink=1" class="new" title="User:WhoIsThat? (page does not exist)">WhoIsThat?</a>
+</td>
+<td>2020-11-23 02:59:40
+</td>
+<td>
+</td>
+<td>12
+</td>
+<td>142
+</td>
+<td>
+<span title="4 days, from 2021-03-01 to 2021-03-05 (16 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>0.11
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Ismailarilik.html" title="User:Ismailarilik">Ismailarilik</a>
+</td>
+<td>2023-05-24 09:02:34
+</td>
+<td>
+</td>
+<td>12
+</td>
+<td>31
+</td>
+<td>
+<span title="3 days, from 2023-05-24 to 2023-05-26 (10 edits)">3</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (5 edits)">1</span>
+</td>
+<td>0.07
+</td>
+<td>0.07
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:RubenKelevra&amp;action=edit&amp;redlink=1" class="new" title="User:RubenKelevra (page does not exist)">RubenKelevra</a>
+</td>
+<td>2013-02-28 20:10:27
+</td>
+<td>
+</td>
+<td>10
+</td>
+<td>56
+</td>
+<td>
+<span title="2 days, from 2014-05-27 to 2014-05-28 (3 edits)">2</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (8 edits)">1</span>
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Indigo.html" title="User:Indigo">Indigo</a>
+</td>
+<td>2012-07-14 13:44:09
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>
+</td>
+<td>9
+</td>
+<td>7336
+</td>
+<td>
+<span title="101 days, from 2016-02-11 to 2016-05-21 (1019 edits)">101</span>
+</td>
+<td>0
+</td>
+<td>1.67
+</td>
+<td>1.68
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Coriollis&amp;action=edit&amp;redlink=1" class="new" title="User:Coriollis (page does not exist)">Coriollis</a>
+</td>
+<td>2022-11-30 02:06:54
+</td>
+<td>
+</td>
+<td>9
+</td>
+<td>33
+</td>
+<td>
+<span title="2 days, from 2023-04-29 to 2023-04-30 (3 edits)">2</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (9 edits)">1</span>
+</td>
+<td>0.05
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ThoughtBubble&amp;action=edit&amp;redlink=1" class="new" title="User:ThoughtBubble (page does not exist)">ThoughtBubble</a>
+</td>
+<td>2024-07-09 15:20:14
+</td>
+<td>
+</td>
+<td>9
+</td>
+<td>9
+</td>
+<td>
+<span title="2 days, from 2024-07-09 to 2024-07-10 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.39
+</td>
+<td>1.50
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Theluga&amp;action=edit&amp;redlink=1" class="new" title="User:Theluga (page does not exist)">Theluga</a>
+</td>
+<td>2024-07-11 15:54:39
+</td>
+<td>
+</td>
+<td>8
+</td>
+<td>8
+</td>
+<td>
+<span title="2 days, from 2024-07-11 to 2024-07-13 (8 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.38
+</td>
+<td>4.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Prms-Prmt.html" title="User:Prms-Prmt">Prms-Prmt</a>
+</td>
+<td>2022-08-16 13:21:12
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>250
+</td>
+<td>
+<span title="17 days, from 2022-08-16 to 2022-09-01 (137 edits)">17</span>
+</td>
+<td>0
+</td>
+<td>0.35
+</td>
+<td>0.35
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Siavoshkc&amp;action=edit&amp;redlink=1" class="new" title="User:Siavoshkc (page does not exist)">Siavoshkc</a>
+</td>
+<td>2023-02-20 16:44:51
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>30
+</td>
+<td>
+<span title="4 days, from 2023-11-03 to 2023-11-06 (8 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Mailaender.html" title="User:Mailaender">Mailaender</a>
+</td>
+<td>2022-07-16 17:40:20
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>27
+</td>
+<td>
+<span title="2 days, from 2022-07-16 to 2022-07-17 (6 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Whites11&amp;action=edit&amp;redlink=1" class="new" title="User:Whites11 (page does not exist)">Whites11</a>
+</td>
+<td>2015-06-20 08:14:12
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>14
+</td>
+<td>
+<span title="1 days, from 2015-06-20 to 2015-06-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Mxzcabel.html" title="User:Mxzcabel">Mxzcabel</a>
+</td>
+<td>2023-08-29 01:13:35
+</td>
+<td>
+</td>
+<td>6
+</td>
+<td>367
+</td>
+<td>
+<span title="16 days, from 2023-09-21 to 2023-10-06 (127 edits)">16</span>
+</td>
+<td>0
+</td>
+<td>1.09
+</td>
+<td>1.15
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Metaory&amp;action=edit&amp;redlink=1" class="new" title="User:Metaory (page does not exist)">Metaory</a>
+</td>
+<td>2024-07-04 01:15:58
+</td>
+<td>
+</td>
+<td>6
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2024-07-04 to 2024-07-04 (6 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.21
+</td>
+<td>6.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Ashark.html" title="User:Ashark">Ashark</a>
+</td>
+<td>2017-04-12 05:28:29
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>620
+</td>
+<td>
+<span title="7 days, from 2022-11-22 to 2022-11-29 (14 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.23
+</td>
+<td>0.23
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Victoire&amp;action=edit&amp;redlink=1" class="new" title="User:Victoire (page does not exist)">Victoire</a>
+</td>
+<td>2016-04-01 16:10:53
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>72
+</td>
+<td>
+<span title="3 days, from 2016-05-18 to 2016-05-20 (8 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Teika.html" title="User:Teika">Teika</a>
+</td>
+<td>2012-04-22 07:58:13
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>55
+</td>
+<td>
+<span title="2 days, from 2018-08-10 to 2018-08-12 (4 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gcb&amp;action=edit&amp;redlink=1" class="new" title="User:Gcb (page does not exist)">Gcb</a>
+</td>
+<td>2012-11-28 19:19:07
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>46
+</td>
+<td>
+<span title="2 days, from 2024-07-13 to 2024-07-14 (3 edits)">2</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (2 edits)">1</span>
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Iyanmv&amp;action=edit&amp;redlink=1" class="new" title="User:Iyanmv (page does not exist)">Iyanmv</a>
+</td>
+<td>2019-02-03 23:10:24
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>40
+</td>
+<td>
+<span title="3 days, from 2024-04-15 to 2024-04-17 (4 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tachtler&amp;action=edit&amp;redlink=1" class="new" title="User:Tachtler (page does not exist)">Tachtler</a>
+</td>
+<td>2022-03-28 13:26:34
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>30
+</td>
+<td>
+<span title="1 days, from 2022-03-28 to 2022-03-28 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Denn.html" title="User:Denn">Denn</a>
+</td>
+<td>2011-02-05 20:25:33
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>19
+</td>
+<td>
+<span title="1 days, from 2011-02-05 to 2011-02-05 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cyb3rMonk&amp;action=edit&amp;redlink=1" class="new" title="User:Cyb3rMonk (page does not exist)">Cyb3rMonk</a>
+</td>
+<td>2024-07-12 19:11:48
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.25
+</td>
+<td>0.45
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Fengchao.html" title="User:Fengchao">Fengchao</a>
+</td>
+<td>2011-04-19 07:37:53
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>4
+</td>
+<td>15130
+</td>
+<td>
+<span title="27 days, from 2012-05-07 to 2012-06-02 (528 edits)">27</span>
+</td>
+<td>0
+</td>
+<td>3.12
+</td>
+<td>3.12
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Memchr.html" title="User:Memchr">Memchr</a>
+</td>
+<td>2023-01-11 11:20:22
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>59
+</td>
+<td>
+<span title="1 days, from 2023-01-21 to 2023-01-21 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.10
+</td>
+<td>0.11
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Managor&amp;action=edit&amp;redlink=1" class="new" title="User:Managor (page does not exist)">Managor</a>
+</td>
+<td>2016-11-30 09:42:32
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>49
+</td>
+<td>
+<span title="1 days, from 2016-11-30 to 2016-11-30 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Zosoled.html" title="User:Zosoled">Zosoled</a>
+</td>
+<td>2023-05-03 22:00:40
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>30
+</td>
+<td>
+<span title="1 days, from 2023-11-27 to 2023-11-28 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>0.12
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:BiteDasher&amp;action=edit&amp;redlink=1" class="new" title="User:BiteDasher (page does not exist)">BiteDasher</a>
+</td>
+<td>2020-04-30 16:16:11
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>19
+</td>
+<td>
+<span title="1 days, from 2020-12-06 to 2020-12-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gnailuy&amp;action=edit&amp;redlink=1" class="new" title="User:Gnailuy (page does not exist)">Gnailuy</a>
+</td>
+<td>2012-05-24 09:25:13
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2012-05-27 to 2012-05-27 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Thor-x86&amp;action=edit&amp;redlink=1" class="new" title="User:Thor-x86 (page does not exist)">Thor-x86</a>
+</td>
+<td>2024-01-22 14:04:52
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2024-01-22 to 2024-01-22 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Flow-c&amp;action=edit&amp;redlink=1" class="new" title="User:Flow-c (page does not exist)">Flow-c</a>
+</td>
+<td>2024-03-26 16:50:23
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2024-03-26 to 2024-03-26 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Arcosenautic&amp;action=edit&amp;redlink=1" class="new" title="User:Arcosenautic (page does not exist)">Arcosenautic</a>
+</td>
+<td>2024-05-16 16:06:20
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-07-29 to 2024-07-29 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>4.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Crispyfires.html" title="User:Crispyfires">Crispyfires</a>
+</td>
+<td>2024-07-02 04:10:46
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="2 days, from 2024-07-02 to 2024-07-03 (3 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.13
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:SMendon&amp;action=edit&amp;redlink=1" class="new" title="User:SMendon (page does not exist)">SMendon</a>
+</td>
+<td>2024-07-04 17:49:25
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-07-04 to 2024-07-04 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.14
+</td>
+<td>4.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Roflmaostc&amp;action=edit&amp;redlink=1" class="new" title="User:Roflmaostc (page does not exist)">Roflmaostc</a>
+</td>
+<td>2024-07-05 22:30:36
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-07-05 to 2024-07-05 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.15
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:CornaHere&amp;action=edit&amp;redlink=1" class="new" title="User:CornaHere (page does not exist)">CornaHere</a>
+</td>
+<td>2024-07-06 04:14:05
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-07-13 to 2024-07-13 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.15
+</td>
+<td>0.57
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gurgur&amp;action=edit&amp;redlink=1" class="new" title="User:Gurgur (page does not exist)">Gurgur</a>
+</td>
+<td>2024-07-11 18:52:01
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-07-11 to 2024-07-12 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.19
+</td>
+<td>4.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:PoppyCO&amp;action=edit&amp;redlink=1" class="new" title="User:PoppyCO (page does not exist)">PoppyCO</a>
+</td>
+<td>2024-07-15 16:48:10
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-07-15 to 2024-07-15 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.24
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Soloturn.html" title="User:Soloturn">Soloturn</a>
+</td>
+<td>2016-04-25 11:33:26
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>448
+</td>
+<td>
+<span title="3 days, from 2016-11-25 to 2016-11-27 (9 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.15
+</td>
+<td>0.16
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Hanabishi.html" title="User:Hanabishi">Hanabishi</a>
+</td>
+<td>2020-08-06 08:14:36
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>438
+</td>
+<td>
+<span title="6 days, from 2024-02-18 to 2024-02-24 (55 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.30
+</td>
+<td>0.30
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kusanaginoturugi.html" title="User:Kusanaginoturugi">Kusanaginoturugi</a>
+</td>
+<td>2013-04-14 03:24:59
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>240
+</td>
+<td>
+<span title="3 days, from 2020-08-23 to 2020-08-25 (4 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:YHNdnzj.html" title="User:YHNdnzj">YHNdnzj</a>
+</td>
+<td>2019-08-16 04:26:07
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>193
+</td>
+<td>
+<span title="4 days, from 2024-03-04 to 2024-03-07 (32 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>0.11
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Gromit.html" title="User:Gromit">Gromit</a>
+</td>
+<td>2022-10-19 12:53:31
+</td>
+<td>
+<a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>
+</td>
+<td>3
+</td>
+<td>129
+</td>
+<td>
+<span title="3 days, from 2023-05-19 to 2023-05-21 (47 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.20
+</td>
+<td>0.20
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kulak.html" title="User:Kulak">Kulak</a>
+</td>
+<td>2020-09-17 03:18:17
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>92
+</td>
+<td>
+<span title="2 days, from 2023-01-24 to 2023-01-25 (4 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>0.07
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:LukasF.html" title="User:LukasF">LukasF</a>
+</td>
+<td>2021-09-16 20:51:03
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>77
+</td>
+<td>
+<span title="2 days, from 2022-08-14 to 2022-08-16 (15 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>0.07
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Fosskers&amp;action=edit&amp;redlink=1" class="new" title="User:Fosskers (page does not exist)">Fosskers</a>
+</td>
+<td>2012-09-07 03:06:34
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>58
+</td>
+<td>
+<span title="1 days, from 2012-09-07 to 2012-09-08 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Frx&amp;action=edit&amp;redlink=1" class="new" title="User:Frx (page does not exist)">Frx</a>
+</td>
+<td>2014-11-11 19:14:27
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>43
+</td>
+<td>
+<span title="1 days, from 2014-12-27 to 2014-12-27 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Poleprogger&amp;action=edit&amp;redlink=1" class="new" title="User:Poleprogger (page does not exist)">Poleprogger</a>
+</td>
+<td>2016-02-15 16:16:34
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>27
+</td>
+<td>
+<span title="1 days, from 2016-02-15 to 2016-02-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Marcool04&amp;action=edit&amp;redlink=1" class="new" title="User:Marcool04 (page does not exist)">Marcool04</a>
+</td>
+<td>2020-01-20 07:11:18
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>25
+</td>
+<td>
+<span title="1 days, from 2020-01-20 to 2020-01-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Nalthien&amp;action=edit&amp;redlink=1" class="new" title="User:Nalthien (page does not exist)">Nalthien</a>
+</td>
+<td>2022-04-07 00:39:17
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>25
+</td>
+<td>
+<span title="3 days, from 2024-06-17 to 2024-06-19 (13 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Nici.html" title="User:Nici">Nici</a>
+</td>
+<td>2022-01-21 16:08:15
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>16
+</td>
+<td>
+<span title="1 days, from 2022-01-21 to 2022-01-21 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Vifly&amp;action=edit&amp;redlink=1" class="new" title="User:Vifly (page does not exist)">Vifly</a>
+</td>
+<td>2020-05-01 14:10:07
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2020-05-01 to 2020-05-01 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ponyrider&amp;action=edit&amp;redlink=1" class="new" title="User:Ponyrider (page does not exist)">Ponyrider</a>
+</td>
+<td>2014-11-18 06:28:24
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-06-07 to 2024-06-07 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.08
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Unawarez&amp;action=edit&amp;redlink=1" class="new" title="User:Unawarez (page does not exist)">Unawarez</a>
+</td>
+<td>2023-05-09 02:30:38
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2023-05-09 to 2023-05-09 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Vitaly-zdanevich&amp;action=edit&amp;redlink=1" class="new" title="User:Vitaly-zdanevich (page does not exist)">Vitaly-zdanevich</a>
+</td>
+<td>2024-05-27 10:20:41
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-07-02 to 2024-07-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>0.16
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Nikitas.html" title="User:Nikitas">Nikitas</a>
+</td>
+<td>2024-07-08 03:47:05
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>0.50
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Davidyz&amp;action=edit&amp;redlink=1" class="new" title="User:Davidyz (page does not exist)">Davidyz</a>
+</td>
+<td>2024-07-15 08:52:28
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-07-15 to 2024-07-15 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.18
+</td>
+<td>3.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Eagerestwolf&amp;action=edit&amp;redlink=1" class="new" title="User:Eagerestwolf (page does not exist)">Eagerestwolf</a>
+</td>
+<td>2024-07-31 07:47:30
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (3 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (3 edits)">1</span>
+</td>
+<td>3.00
+</td>
+<td>3.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Alad.html" title="User:Alad">Alad</a>
+</td>
+<td>2014-04-23 08:42:17
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>, <a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Bureaucrats">Bureaucrat</a>
+</td>
+<td>2
+</td>
+<td>20723
+</td>
+<td>
+<span title="57 days, from 2015-02-14 to 2015-04-11 (1205 edits)">57</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (2 edits)">1</span>
+</td>
+<td>5.52
+</td>
+<td>5.52
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Regid.html" title="User:Regid">Regid</a>
+</td>
+<td>2016-07-20 01:50:05
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>1958
+</td>
+<td>
+<span title="7 days, from 2017-03-16 to 2017-03-22 (19 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.67
+</td>
+<td>0.67
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Neitsab.html" title="User:Neitsab">Neitsab</a>
+</td>
+<td>2013-05-02 14:01:28
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>2
+</td>
+<td>1016
+</td>
+<td>
+<span title="6 days, from 2022-03-01 to 2022-03-06 (31 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.25
+</td>
+<td>0.25
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Cvlc.html" title="User:Cvlc">Cvlc</a>
+</td>
+<td>2020-03-25 21:42:35
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>638
+</td>
+<td>
+<span title="7 days, from 2022-09-26 to 2022-10-02 (36 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.40
+</td>
+<td>0.41
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Dungeonseeker.html" title="User:Dungeonseeker">Dungeonseeker</a>
+</td>
+<td>2021-10-29 08:29:03
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>611
+</td>
+<td>
+<span title="5 days, from 2023-08-01 to 2023-08-05 (81 edits)">5</span>
+</td>
+<td>0
+</td>
+<td>0.61
+</td>
+<td>0.62
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Dybdeskarphet.html" title="User:Dybdeskarphet">Dybdeskarphet</a>
+</td>
+<td>2021-11-03 12:25:31
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>2
+</td>
+<td>576
+</td>
+<td>
+<span title="3 days, from 2021-12-19 to 2021-12-22 (41 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.57
+</td>
+<td>0.59
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ordoviz&amp;action=edit&amp;redlink=1" class="new" title="User:Ordoviz (page does not exist)">Ordoviz</a>
+</td>
+<td>2019-01-26 06:57:46
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>128
+</td>
+<td>
+<span title="2 days, from 2019-01-31 to 2019-02-01 (2 edits)">2</span>
+</td>
+<td>
+<span title="2 days, from 2024-07-30 to 2024-07-31 (2 edits)">2</span>
+</td>
+<td>0.06
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:AshMyzk&amp;action=edit&amp;redlink=1" class="new" title="User:AshMyzk (page does not exist)">AshMyzk</a>
+</td>
+<td>2022-03-12 11:51:57
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>123
+</td>
+<td>
+<span title="2 days, from 2022-08-02 to 2022-08-03 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.14
+</td>
+<td>0.15
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Antiz&amp;action=edit&amp;redlink=1" class="new" title="User:Antiz (page does not exist)">Antiz</a>
+</td>
+<td>2021-11-16 19:42:16
+</td>
+<td>
+<a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>
+</td>
+<td>2
+</td>
+<td>93
+</td>
+<td>
+<span title="2 days, from 2023-10-23 to 2023-10-25 (20 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>0.10
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Wild_Penguin&amp;action=edit&amp;redlink=1" class="new" title="User:Wild Penguin (page does not exist)">Wild Penguin</a>
+</td>
+<td>2015-11-22 12:06:36
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>78
+</td>
+<td>
+<span title="4 days, from 2023-11-08 to 2023-11-11 (11 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gombi&amp;action=edit&amp;redlink=1" class="new" title="User:Gombi (page does not exist)">Gombi</a>
+</td>
+<td>2023-07-16 17:42:54
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>70
+</td>
+<td>
+<span title="2 days, from 2024-03-09 to 2024-03-11 (38 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.18
+</td>
+<td>0.20
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Liassica.html" title="User:Liassica">Liassica</a>
+</td>
+<td>2023-09-04 00:03:08
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>62
+</td>
+<td>
+<span title="3 days, from 2023-09-29 to 2023-10-01 (20 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.19
+</td>
+<td>0.19
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Jl2.html" title="User:Jl2">Jl2</a>
+</td>
+<td>2022-08-02 08:32:25
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>58
+</td>
+<td>
+<span title="3 days, from 2023-06-12 to 2023-06-15 (17 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.08
+</td>
+<td>0.08
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Xantares&amp;action=edit&amp;redlink=1" class="new" title="User:Xantares (page does not exist)">Xantares</a>
+</td>
+<td>2013-10-29 07:49:40
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>44
+</td>
+<td>
+<span title="1 days, from 2013-10-29 to 2013-10-29 (16 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:STEELBAS&amp;action=edit&amp;redlink=1" class="new" title="User:STEELBAS (page does not exist)">STEELBAS</a>
+</td>
+<td>2010-12-07 20:29:52
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>42
+</td>
+<td>
+<span title="2 days, from 2014-04-09 to 2014-04-10 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Davispuh&amp;action=edit&amp;redlink=1" class="new" title="User:Davispuh (page does not exist)">Davispuh</a>
+</td>
+<td>2014-01-06 13:55:15
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>38
+</td>
+<td>
+<span title="1 days, from 2014-01-06 to 2014-01-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tikilou&amp;action=edit&amp;redlink=1" class="new" title="User:Tikilou (page does not exist)">Tikilou</a>
+</td>
+<td>2018-07-03 17:57:28
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>30
+</td>
+<td>
+<span title="1 days, from 2018-07-03 to 2018-07-03 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Lmat.html" title="User:Lmat">Lmat</a>
+</td>
+<td>2015-02-11 10:07:50
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>25
+</td>
+<td>
+<span title="1 days, from 2015-02-11 to 2015-02-11 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Alexeicolin&amp;action=edit&amp;redlink=1" class="new" title="User:Alexeicolin (page does not exist)">Alexeicolin</a>
+</td>
+<td>2014-07-13 02:07:16
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>24
+</td>
+<td>
+<span title="1 days, from 2014-07-13 to 2014-07-13 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Mattalexx&amp;action=edit&amp;redlink=1" class="new" title="User:Mattalexx (page does not exist)">Mattalexx</a>
+</td>
+<td>2018-11-08 22:31:56
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>20
+</td>
+<td>
+<span title="1 days, from 2018-11-09 to 2018-11-09 (1 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (2 edits)">1</span>
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Walathever&amp;action=edit&amp;redlink=1" class="new" title="User:Walathever (page does not exist)">Walathever</a>
+</td>
+<td>2022-10-04 15:40:59
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>20
+</td>
+<td>
+<span title="1 days, from 2022-10-04 to 2022-10-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Unrealapex&amp;action=edit&amp;redlink=1" class="new" title="User:Unrealapex (page does not exist)">Unrealapex</a>
+</td>
+<td>2023-09-17 22:19:31
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>20
+</td>
+<td>
+<span title="1 days, from 2023-09-18 to 2023-09-18 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ljhms&amp;action=edit&amp;redlink=1" class="new" title="User:Ljhms (page does not exist)">Ljhms</a>
+</td>
+<td>2023-08-31 17:59:42
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>18
+</td>
+<td>
+<span title="1 days, from 2023-08-31 to 2023-08-31 (9 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:ab57edaf3ceb411e4455fd6619dbfbfa.html" title="User:Риал Краесис">Риал Краесис</a>
+</td>
+<td>2015-02-19 22:50:29
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>13
+</td>
+<td>
+<span title="1 days, from 2016-10-08 to 2016-10-08 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:AAA&amp;action=edit&amp;redlink=1" class="new" title="User:AAA (page does not exist)">AAA</a>
+</td>
+<td>2024-06-28 18:12:41
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>12
+</td>
+<td>
+<span title="1 days, from 2024-06-28 to 2024-06-28 (9 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.35
+</td>
+<td>2.40
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Simonmysun&amp;action=edit&amp;redlink=1" class="new" title="User:Simonmysun (page does not exist)">Simonmysun</a>
+</td>
+<td>2018-06-21 19:02:11
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>11
+</td>
+<td>
+<span title="1 days, from 2018-06-21 to 2018-06-21 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cbrnr&amp;action=edit&amp;redlink=1" class="new" title="User:Cbrnr (page does not exist)">Cbrnr</a>
+</td>
+<td>2022-02-17 08:11:27
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>10
+</td>
+<td>
+<span title="1 days, from 2023-05-02 to 2023-05-03 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:GNUtoo&amp;action=edit&amp;redlink=1" class="new" title="User:GNUtoo (page does not exist)">GNUtoo</a>
+</td>
+<td>2016-11-03 11:38:42
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>7
+</td>
+<td>
+<span title="1 days, from 2016-11-03 to 2016-11-03 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Whitehorsesoft&amp;action=edit&amp;redlink=1" class="new" title="User:Whitehorsesoft (page does not exist)">Whitehorsesoft</a>
+</td>
+<td>2018-09-12 02:35:38
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>7
+</td>
+<td>
+<span title="1 days, from 2018-09-12 to 2018-09-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Upbqdn&amp;action=edit&amp;redlink=1" class="new" title="User:Upbqdn (page does not exist)">Upbqdn</a>
+</td>
+<td>2022-04-24 11:02:36
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>7
+</td>
+<td>
+<span title="1 days, from 2023-02-25 to 2023-02-26 (4 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ujones&amp;action=edit&amp;redlink=1" class="new" title="User:Ujones (page does not exist)">Ujones</a>
+</td>
+<td>2021-09-04 06:06:09
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2021-10-14 to 2021-10-14 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Nudiustertian.html" title="User:Nudiustertian">Nudiustertian</a>
+</td>
+<td>2024-04-10 23:06:11
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2024-04-10 to 2024-04-10 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:RevenantX&amp;action=edit&amp;redlink=1" class="new" title="User:RevenantX (page does not exist)">RevenantX</a>
+</td>
+<td>2011-05-20 22:16:23
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2011-05-20 to 2011-05-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Aperion&amp;action=edit&amp;redlink=1" class="new" title="User:Aperion (page does not exist)">Aperion</a>
+</td>
+<td>2014-09-20 09:10:58
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2014-09-20 to 2014-09-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Benm&amp;action=edit&amp;redlink=1" class="new" title="User:Benm (page does not exist)">Benm</a>
+</td>
+<td>2021-03-27 20:15:02
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2021-03-27 to 2021-03-27 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Kalcifer&amp;action=edit&amp;redlink=1" class="new" title="User:Kalcifer (page does not exist)">Kalcifer</a>
+</td>
+<td>2022-09-06 03:04:35
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2022-09-06 to 2022-09-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Myphz&amp;action=edit&amp;redlink=1" class="new" title="User:Myphz (page does not exist)">Myphz</a>
+</td>
+<td>2023-07-05 08:07:58
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2023-07-05 to 2023-07-05 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:K4leg&amp;action=edit&amp;redlink=1" class="new" title="User:K4leg (page does not exist)">K4leg</a>
+</td>
+<td>2022-08-29 10:42:09
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2022-10-02 to 2022-10-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:1F616EMO&amp;action=edit&amp;redlink=1" class="new" title="User:1F616EMO (page does not exist)">1F616EMO</a>
+</td>
+<td>2023-07-07 09:36:25
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2023-08-02 to 2023-08-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Thane_DE&amp;action=edit&amp;redlink=1" class="new" title="User:Thane DE (page does not exist)">Thane DE</a>
+</td>
+<td>2017-05-21 22:57:17
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2023-06-17 to 2023-06-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ElParaguayo&amp;action=edit&amp;redlink=1" class="new" title="User:ElParaguayo (page does not exist)">ElParaguayo</a>
+</td>
+<td>2021-09-17 15:25:34
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2021-09-17 to 2021-09-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gi1242&amp;action=edit&amp;redlink=1" class="new" title="User:Gi1242 (page does not exist)">Gi1242</a>
+</td>
+<td>2024-02-24 14:02:57
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-02-24 to 2024-02-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Wegzi&amp;action=edit&amp;redlink=1" class="new" title="User:Wegzi (page does not exist)">Wegzi</a>
+</td>
+<td>2024-05-06 21:04:03
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-05-13 to 2024-05-13 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cyao&amp;action=edit&amp;redlink=1" class="new" title="User:Cyao (page does not exist)">Cyao</a>
+</td>
+<td>2024-06-05 16:17:28
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-06-05 to 2024-06-05 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>0.10
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Sving1024&amp;action=edit&amp;redlink=1" class="new" title="User:Sving1024 (page does not exist)">Sving1024</a>
+</td>
+<td>2024-06-16 11:12:09
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-06-29 to 2024-06-29 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>0.10
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:M007x&amp;action=edit&amp;redlink=1" class="new" title="User:M007x (page does not exist)">M007x</a>
+</td>
+<td>2024-07-03 00:24:07
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-03 to 2024-07-03 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:JohnAZoidberg&amp;action=edit&amp;redlink=1" class="new" title="User:JohnAZoidberg (page does not exist)">JohnAZoidberg</a>
+</td>
+<td>2024-07-10 03:26:11
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-10 to 2024-07-10 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:BlackberryStyx&amp;action=edit&amp;redlink=1" class="new" title="User:BlackberryStyx (page does not exist)">BlackberryStyx</a>
+</td>
+<td>2024-07-11 03:05:41
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-11 to 2024-07-11 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.10
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Seamuseats.html" title="User:Seamuseats">Seamuseats</a>
+</td>
+<td>2024-07-14 18:22:20
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-14 to 2024-07-14 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jfrimmel&amp;action=edit&amp;redlink=1" class="new" title="User:Jfrimmel (page does not exist)">Jfrimmel</a>
+</td>
+<td>2024-07-22 08:44:30
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-22 to 2024-07-22 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.20
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ingenarel&amp;action=edit&amp;redlink=1" class="new" title="User:Ingenarel (page does not exist)">Ingenarel</a>
+</td>
+<td>2024-07-25 13:17:10
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-28 to 2024-07-29 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.29
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:B1f6c1c4&amp;action=edit&amp;redlink=1" class="new" title="User:B1f6c1c4 (page does not exist)">B1f6c1c4</a>
+</td>
+<td>2024-07-29 02:54:53
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-29 to 2024-07-29 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.67
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ThePython10110&amp;action=edit&amp;redlink=1" class="new" title="User:ThePython10110 (page does not exist)">ThePython10110</a>
+</td>
+<td>2024-07-31 19:39:32
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (2 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (2 edits)">1</span>
+</td>
+<td>2.00
+</td>
+<td>2.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Lonaowna.html" title="User:Lonaowna">Lonaowna</a>
+</td>
+<td>2012-08-19 12:08:13
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>
+</td>
+<td>1
+</td>
+<td>6275
+</td>
+<td>
+<span title="19 days, from 2017-11-01 to 2017-11-19 (234 edits)">19</span>
+</td>
+<td>0
+</td>
+<td>1.44
+</td>
+<td>1.44
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Graysky.html" title="User:Graysky">Graysky</a>
+</td>
+<td>2009-04-16 15:46:28
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>1
+</td>
+<td>5668
+</td>
+<td>
+<span title="11 days, from 2012-10-19 to 2012-10-29 (56 edits)">11</span>
+</td>
+<td>0
+</td>
+<td>1.01
+</td>
+<td>1.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:City-busz.html" title="User:City-busz">City-busz</a>
+</td>
+<td>2010-12-31 00:03:36
+</td>
+<td>
+<a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>
+</td>
+<td>1
+</td>
+<td>3707
+</td>
+<td>
+<span title="16 days, from 2018-05-14 to 2018-05-30 (476 edits)">16</span>
+</td>
+<td>0
+</td>
+<td>0.75
+</td>
+<td>0.75
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Prince213&amp;action=edit&amp;redlink=1" class="new" title="User:Prince213 (page does not exist)">Prince213</a>
+</td>
+<td>2021-02-11 06:11:39
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>830
+</td>
+<td>
+<span title="9 days, from 2022-07-06 to 2022-07-15 (308 edits)">9</span>
+</td>
+<td>0
+</td>
+<td>0.66
+</td>
+<td>1.05
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Foxboron.html" title="User:Foxboron">Foxboron</a>
+</td>
+<td>2013-01-25 14:19:12
+</td>
+<td>
+<a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Developer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>1
+</td>
+<td>498
+</td>
+<td>
+<span title="5 days, from 2022-01-28 to 2022-02-02 (21 edits)">5</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>0.12
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Erwinjitsu&amp;action=edit&amp;redlink=1" class="new" title="User:Erwinjitsu (page does not exist)">Erwinjitsu</a>
+</td>
+<td>2020-09-24 15:35:56
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>330
+</td>
+<td>
+<span title="4 days, from 2020-11-04 to 2020-11-07 (62 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.23
+</td>
+<td>0.24
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Sweyn78.html" title="User:Sweyn78">Sweyn78</a>
+</td>
+<td>2016-09-06 02:31:46
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>314
+</td>
+<td>
+<span title="4 days, from 2021-04-30 to 2021-05-03 (25 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>0.11
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Fhy&amp;action=edit&amp;redlink=1" class="new" title="User:Fhy (page does not exist)">Fhy</a>
+</td>
+<td>2022-11-21 13:36:38
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>251
+</td>
+<td>
+<span title="3 days, from 2024-01-19 to 2024-01-21 (5 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.41
+</td>
+<td>0.41
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Mr.Smith1974&amp;action=edit&amp;redlink=1" class="new" title="User:Mr.Smith1974 (page does not exist)">Mr.Smith1974</a>
+</td>
+<td>2022-09-30 07:31:45
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>238
+</td>
+<td>
+<span title="7 days, from 2023-05-14 to 2023-05-20 (94 edits)">7</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>0.35
+</td>
+<td>0.35
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:KirisameMarisa.html" title="User:KirisameMarisa">KirisameMarisa</a>
+</td>
+<td>2022-01-29 19:11:27
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>195
+</td>
+<td>
+<span title="7 days, from 2022-08-18 to 2022-08-24 (47 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.21
+</td>
+<td>0.21
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Drws&amp;action=edit&amp;redlink=1" class="new" title="User:Drws (page does not exist)">Drws</a>
+</td>
+<td>2016-04-08 18:33:10
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>142
+</td>
+<td>
+<span title="4 days, from 2024-01-24 to 2024-01-27 (15 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>0.05
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Torxed.html" title="User:Torxed">Torxed</a>
+</td>
+<td>2013-05-27 13:04:19
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>1
+</td>
+<td>134
+</td>
+<td>
+<span title="2 days, from 2018-06-26 to 2018-06-27 (15 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tom.ty89&amp;action=edit&amp;redlink=1" class="new" title="User:Tom.ty89 (page does not exist)">Tom.ty89</a>
+</td>
+<td>2014-03-05 18:16:16
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>125
+</td>
+<td>
+<span title="3 days, from 2015-03-17 to 2015-03-19 (62 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Chrislongros.html" title="User:Chrislongros">Chrislongros</a>
+</td>
+<td>2023-10-16 09:44:16
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>121
+</td>
+<td>
+<span title="7 days, from 2023-12-21 to 2023-12-28 (80 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.42
+</td>
+<td>0.57
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tiziodcaio&amp;action=edit&amp;redlink=1" class="new" title="User:Tiziodcaio (page does not exist)">Tiziodcaio</a>
+</td>
+<td>2021-06-18 18:45:32
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>80
+</td>
+<td>
+<span title="1 days, from 2021-11-12 to 2021-11-12 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>0.08
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Willemw&amp;action=edit&amp;redlink=1" class="new" title="User:Willemw (page does not exist)">Willemw</a>
+</td>
+<td>2013-03-28 14:21:48
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>68
+</td>
+<td>
+<span title="2 days, from 2013-03-28 to 2013-03-30 (4 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Krotesk&amp;action=edit&amp;redlink=1" class="new" title="User:Krotesk (page does not exist)">Krotesk</a>
+</td>
+<td>2023-01-18 12:30:22
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>64
+</td>
+<td>
+<span title="2 days, from 2023-06-21 to 2023-06-23 (11 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>0.12
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:VedranMiletic.html" title="User:VedranMiletic">VedranMiletic</a>
+</td>
+<td>2022-09-22 08:14:24
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>61
+</td>
+<td>
+<span title="3 days, from 2023-02-17 to 2023-02-19 (19 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>0.09
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:JimRees&amp;action=edit&amp;redlink=1" class="new" title="User:JimRees (page does not exist)">JimRees</a>
+</td>
+<td>2013-04-12 16:20:06
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>60
+</td>
+<td>
+<span title="2 days, from 2021-04-01 to 2021-04-02 (3 edits)">2</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:CyberShadow&amp;action=edit&amp;redlink=1" class="new" title="User:CyberShadow (page does not exist)">CyberShadow</a>
+</td>
+<td>2016-01-25 15:11:17
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>60
+</td>
+<td>
+<span title="2 days, from 2016-02-10 to 2016-02-11 (6 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Dawidpotocki&amp;action=edit&amp;redlink=1" class="new" title="User:Dawidpotocki (page does not exist)">Dawidpotocki</a>
+</td>
+<td>2018-10-21 15:35:25
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>46
+</td>
+<td>
+<span title="2 days, from 2018-10-21 to 2018-10-23 (24 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Ayekat.html" title="User:Ayekat">Ayekat</a>
+</td>
+<td>2015-08-04 20:35:05
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>45
+</td>
+<td>
+<span title="2 days, from 2016-11-29 to 2016-11-30 (3 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cwaffles&amp;action=edit&amp;redlink=1" class="new" title="User:Cwaffles (page does not exist)">Cwaffles</a>
+</td>
+<td>2019-01-06 05:32:21
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>40
+</td>
+<td>
+<span title="2 days, from 2022-09-02 to 2022-09-03 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Slimb&amp;action=edit&amp;redlink=1" class="new" title="User:Slimb (page does not exist)">Slimb</a>
+</td>
+<td>2020-08-16 16:45:05
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>35
+</td>
+<td>
+<span title="2 days, from 2022-08-20 to 2022-08-21 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Architector4&amp;action=edit&amp;redlink=1" class="new" title="User:Architector4 (page does not exist)">Architector4</a>
+</td>
+<td>2019-07-02 19:28:34
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>33
+</td>
+<td>
+<span title="1 days, from 2019-07-02 to 2019-07-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Nikost74&amp;action=edit&amp;redlink=1" class="new" title="User:Nikost74 (page does not exist)">Nikost74</a>
+</td>
+<td>2023-02-04 13:36:24
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>33
+</td>
+<td>
+<span title="3 days, from 2023-02-04 to 2023-02-07 (6 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>0.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Arti.html" title="User:Arti">Arti</a>
+</td>
+<td>2015-04-12 17:45:20
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>31
+</td>
+<td>
+<span title="1 days, from 2015-04-12 to 2015-04-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:TheSola10.html" title="User:TheSola10">TheSola10</a>
+</td>
+<td>2017-01-13 18:25:06
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>30
+</td>
+<td>
+<span title="3 days, from 2017-03-09 to 2017-03-11 (16 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:GiftShower.html" title="User:GiftShower">GiftShower</a>
+</td>
+<td>2022-07-15 02:15:47
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>29
+</td>
+<td>
+<span title="2 days, from 2024-06-20 to 2024-06-21 (5 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Konlaasz&amp;action=edit&amp;redlink=1" class="new" title="User:Konlaasz (page does not exist)">Konlaasz</a>
+</td>
+<td>2009-11-25 20:15:33
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>28
+</td>
+<td>
+<span title="2 days, from 2010-05-24 to 2010-05-25 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ventto&amp;action=edit&amp;redlink=1" class="new" title="User:Ventto (page does not exist)">Ventto</a>
+</td>
+<td>2016-10-19 15:53:09
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>27
+</td>
+<td>
+<span title="4 days, from 2017-01-30 to 2017-02-03 (6 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Mahkoh&amp;action=edit&amp;redlink=1" class="new" title="User:Mahkoh (page does not exist)">Mahkoh</a>
+</td>
+<td>2012-08-05 13:05:39
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>26
+</td>
+<td>
+<span title="1 days, from 2012-08-05 to 2012-08-05 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Aquova.html" title="User:Aquova">Aquova</a>
+</td>
+<td>2021-01-12 21:17:03
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>26
+</td>
+<td>
+<span title="2 days, from 2023-03-15 to 2023-03-16 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Agowa338&amp;action=edit&amp;redlink=1" class="new" title="User:Agowa338 (page does not exist)">Agowa338</a>
+</td>
+<td>2019-01-12 09:05:42
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>25
+</td>
+<td>
+<span title="1 days, from 2019-01-24 to 2019-01-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Hunter&amp;action=edit&amp;redlink=1" class="new" title="User:Hunter (page does not exist)">Hunter</a>
+</td>
+<td>2023-01-26 13:26:53
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>22
+</td>
+<td>
+<span title="2 days, from 2024-06-27 to 2024-06-29 (11 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.05
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Weby&amp;action=edit&amp;redlink=1" class="new" title="User:Weby (page does not exist)">Weby</a>
+</td>
+<td>2015-08-22 22:50:42
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>20
+</td>
+<td>
+<span title="1 days, from 2015-08-22 to 2015-08-22 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Danger89&amp;action=edit&amp;redlink=1" class="new" title="User:Danger89 (page does not exist)">Danger89</a>
+</td>
+<td>2011-04-25 17:51:39
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>17
+</td>
+<td>
+<span title="1 days, from 2011-04-25 to 2011-04-25 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ModYokosuka&amp;action=edit&amp;redlink=1" class="new" title="User:ModYokosuka (page does not exist)">ModYokosuka</a>
+</td>
+<td>2019-02-07 19:57:20
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>17
+</td>
+<td>
+<span title="1 days, from 2019-02-07 to 2019-02-07 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:GloriousYellow&amp;action=edit&amp;redlink=1" class="new" title="User:GloriousYellow (page does not exist)">GloriousYellow</a>
+</td>
+<td>2021-05-12 22:34:13
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>17
+</td>
+<td>
+<span title="1 days, from 2021-05-12 to 2021-05-12 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Duchess&amp;action=edit&amp;redlink=1" class="new" title="User:Duchess (page does not exist)">Duchess</a>
+</td>
+<td>2024-01-10 15:29:13
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>17
+</td>
+<td>
+<span title="2 days, from 2024-03-29 to 2024-03-30 (13 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.08
+</td>
+<td>0.16
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Schlaefer&amp;action=edit&amp;redlink=1" class="new" title="User:Schlaefer (page does not exist)">Schlaefer</a>
+</td>
+<td>2020-07-03 10:53:01
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>16
+</td>
+<td>
+<span title="1 days, from 2020-07-03 to 2020-07-03 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:OdinVex.html" title="User:OdinVex">OdinVex</a>
+</td>
+<td>2021-03-05 03:00:42
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>16
+</td>
+<td>
+<span title="1 days, from 2022-02-13 to 2022-02-13 (5 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:CBiX&amp;action=edit&amp;redlink=1" class="new" title="User:CBiX (page does not exist)">CBiX</a>
+</td>
+<td>2016-11-17 17:13:09
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>15
+</td>
+<td>
+<span title="1 days, from 2016-11-17 to 2016-11-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Alexan&amp;action=edit&amp;redlink=1" class="new" title="User:Alexan (page does not exist)">Alexan</a>
+</td>
+<td>2023-02-15 02:37:02
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>15
+</td>
+<td>
+<span title="1 days, from 2023-02-15 to 2023-02-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Dexus&amp;action=edit&amp;redlink=1" class="new" title="User:Dexus (page does not exist)">Dexus</a>
+</td>
+<td>2023-02-05 23:06:59
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>14
+</td>
+<td>
+<span title="1 days, from 2023-02-05 to 2023-02-05 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Bergentroll&amp;action=edit&amp;redlink=1" class="new" title="User:Bergentroll (page does not exist)">Bergentroll</a>
+</td>
+<td>2016-08-23 06:14:53
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>13
+</td>
+<td>
+<span title="1 days, from 2016-09-11 to 2016-09-11 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Andret&amp;action=edit&amp;redlink=1" class="new" title="User:Andret (page does not exist)">Andret</a>
+</td>
+<td>2023-08-19 19:29:20
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>13
+</td>
+<td>
+<span title="1 days, from 2023-09-29 to 2023-09-29 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:SilentGamePLS.html" title="User:SilentGamePLS">SilentGamePLS</a>
+</td>
+<td>2024-06-05 05:26:44
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>13
+</td>
+<td>
+<span title="2 days, from 2024-06-09 to 2024-06-10 (3 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.23
+</td>
+<td>0.45
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lvml&amp;action=edit&amp;redlink=1" class="new" title="User:Lvml (page does not exist)">Lvml</a>
+</td>
+<td>2017-03-18 15:56:12
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>12
+</td>
+<td>
+<span title="1 days, from 2017-03-18 to 2017-03-18 (7 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Kode54&amp;action=edit&amp;redlink=1" class="new" title="User:Kode54 (page does not exist)">Kode54</a>
+</td>
+<td>2018-12-18 01:34:56
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>12
+</td>
+<td>
+<span title="1 days, from 2018-12-18 to 2018-12-18 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jkhsjdhjs&amp;action=edit&amp;redlink=1" class="new" title="User:Jkhsjdhjs (page does not exist)">Jkhsjdhjs</a>
+</td>
+<td>2017-11-20 11:09:00
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>10
+</td>
+<td>
+<span title="1 days, from 2017-11-20 to 2017-11-20 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Binarynoise&amp;action=edit&amp;redlink=1" class="new" title="User:Binarynoise (page does not exist)">Binarynoise</a>
+</td>
+<td>2023-03-28 22:11:09
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>10
+</td>
+<td>
+<span title="1 days, from 2023-03-28 to 2023-03-28 (5 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:MrHacker&amp;action=edit&amp;redlink=1" class="new" title="User:MrHacker (page does not exist)">MrHacker</a>
+</td>
+<td>2023-11-22 15:43:55
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>10
+</td>
+<td>
+<span title="3 days, from 2023-11-22 to 2023-11-25 (9 edits)">3</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Fhteagle&amp;action=edit&amp;redlink=1" class="new" title="User:Fhteagle (page does not exist)">Fhteagle</a>
+</td>
+<td>2020-08-31 15:43:40
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>9
+</td>
+<td>
+<span title="2 days, from 2024-04-03 to 2024-04-04 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ColonelThirtyTwo&amp;action=edit&amp;redlink=1" class="new" title="User:ColonelThirtyTwo (page does not exist)">ColonelThirtyTwo</a>
+</td>
+<td>2021-10-21 23:33:22
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>9
+</td>
+<td>
+<span title="1 days, from 2021-10-21 to 2021-10-21 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:HurricanePootis&amp;action=edit&amp;redlink=1" class="new" title="User:HurricanePootis (page does not exist)">HurricanePootis</a>
+</td>
+<td>2022-04-11 13:31:01
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>9
+</td>
+<td>
+<span title="1 days, from 2022-07-25 to 2022-07-25 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Menghuan&amp;action=edit&amp;redlink=1" class="new" title="User:Menghuan (page does not exist)">Menghuan</a>
+</td>
+<td>2023-10-21 02:29:19
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>9
+</td>
+<td>
+<span title="1 days, from 2023-11-21 to 2023-11-22 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Bernd_007&amp;action=edit&amp;redlink=1" class="new" title="User:Bernd 007 (page does not exist)">Bernd 007</a>
+</td>
+<td>2024-05-29 06:59:52
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>8
+</td>
+<td>
+<span title="1 days, from 2024-05-29 to 2024-05-29 (6 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>0.23
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Bboozzoo&amp;action=edit&amp;redlink=1" class="new" title="User:Bboozzoo (page does not exist)">Bboozzoo</a>
+</td>
+<td>2017-11-17 06:23:43
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>7
+</td>
+<td>
+<span title="1 days, from 2017-11-17 to 2017-11-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:K1ngjulien&amp;action=edit&amp;redlink=1" class="new" title="User:K1ngjulien (page does not exist)">K1ngjulien</a>
+</td>
+<td>2019-12-29 12:10:46
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>7
+</td>
+<td>
+<span title="1 days, from 2019-12-29 to 2019-12-29 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Q234rty&amp;action=edit&amp;redlink=1" class="new" title="User:Q234rty (page does not exist)">Q234rty</a>
+</td>
+<td>2021-12-24 15:38:26
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>7
+</td>
+<td>
+<span title="1 days, from 2024-03-06 to 2024-03-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.05
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:CryoSword.html" title="User:CryoSword">CryoSword</a>
+</td>
+<td>2024-06-30 17:34:54
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>7
+</td>
+<td>
+<span title="2 days, from 2024-06-30 to 2024-07-01 (6 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.22
+</td>
+<td>0.54
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lukeshu&amp;action=edit&amp;redlink=1" class="new" title="User:Lukeshu (page does not exist)">Lukeshu</a>
+</td>
+<td>2012-11-12 05:01:35
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2012-11-12 to 2012-11-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Fridtjof&amp;action=edit&amp;redlink=1" class="new" title="User:Fridtjof (page does not exist)">Fridtjof</a>
+</td>
+<td>2020-03-13 16:14:54
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2020-03-13 to 2020-03-13 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Asdfchb&amp;action=edit&amp;redlink=1" class="new" title="User:Asdfchb (page does not exist)">Asdfchb</a>
+</td>
+<td>2024-07-01 07:16:34
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>6
+</td>
+<td>
+<span title="1 days, from 2024-07-01 to 2024-07-01 (5 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.19
+</td>
+<td>0.50
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Nh2&amp;action=edit&amp;redlink=1" class="new" title="User:Nh2 (page does not exist)">Nh2</a>
+</td>
+<td>2011-08-15 18:21:06
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2011-08-16 to 2011-08-16 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lucenera&amp;action=edit&amp;redlink=1" class="new" title="User:Lucenera (page does not exist)">Lucenera</a>
+</td>
+<td>2019-05-24 08:43:49
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2021-08-08 to 2021-08-08 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Prof._Green&amp;action=edit&amp;redlink=1" class="new" title="User:Prof. Green (page does not exist)">Prof. Green</a>
+</td>
+<td>2020-08-14 20:04:26
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2020-08-14 to 2020-08-14 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Crimsonking&amp;action=edit&amp;redlink=1" class="new" title="User:Crimsonking (page does not exist)">Crimsonking</a>
+</td>
+<td>2020-11-08 18:56:19
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2020-11-08 to 2020-11-08 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Scientificworld&amp;action=edit&amp;redlink=1" class="new" title="User:Scientificworld (page does not exist)">Scientificworld</a>
+</td>
+<td>2022-11-12 11:51:23
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2022-11-12 to 2022-11-13 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:NextUser&amp;action=edit&amp;redlink=1" class="new" title="User:NextUser (page does not exist)">NextUser</a>
+</td>
+<td>2023-02-01 12:35:04
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2023-02-01 to 2023-02-01 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:KStor2poche&amp;action=edit&amp;redlink=1" class="new" title="User:KStor2poche (page does not exist)">KStor2poche</a>
+</td>
+<td>2023-03-07 12:36:59
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>
+<span title="1 days, from 2023-03-07 to 2023-03-07 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Alexzk&amp;action=edit&amp;redlink=1" class="new" title="User:Alexzk (page does not exist)">Alexzk</a>
+</td>
+<td>2015-07-02 17:49:19
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2015-07-02 to 2015-07-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Sydius&amp;action=edit&amp;redlink=1" class="new" title="User:Sydius (page does not exist)">Sydius</a>
+</td>
+<td>2016-07-01 01:40:19
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2016-07-01 to 2016-07-01 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tremeschin&amp;action=edit&amp;redlink=1" class="new" title="User:Tremeschin (page does not exist)">Tremeschin</a>
+</td>
+<td>2019-04-15 04:41:48
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>
+<span title="2 days, from 2024-06-19 to 2024-06-20 (2 edits)">2</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Vaxry&amp;action=edit&amp;redlink=1" class="new" title="User:Vaxry (page does not exist)">Vaxry</a>
+</td>
+<td>2022-06-10 18:57:01
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2022-06-10 to 2022-06-10 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Infinity128.html" title="User:Infinity128">Infinity128</a>
+</td>
+<td>2023-04-04 14:02:46
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2023-04-04 to 2023-04-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Dragomang87&amp;action=edit&amp;redlink=1" class="new" title="User:Dragomang87 (page does not exist)">Dragomang87</a>
+</td>
+<td>2024-03-16 18:03:53
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>
+<span title="1 days, from 2024-03-16 to 2024-03-17 (3 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Slax&amp;action=edit&amp;redlink=1" class="new" title="User:Slax (page does not exist)">Slax</a>
+</td>
+<td>2013-03-04 14:50:23
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2013-03-04 to 2013-03-04 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Politas&amp;action=edit&amp;redlink=1" class="new" title="User:Politas (page does not exist)">Politas</a>
+</td>
+<td>2020-04-03 02:19:38
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2020-04-03 to 2020-04-03 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gouchi&amp;action=edit&amp;redlink=1" class="new" title="User:Gouchi (page does not exist)">Gouchi</a>
+</td>
+<td>2020-08-15 10:43:26
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-01-09 to 2024-01-09 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Nosrep&amp;action=edit&amp;redlink=1" class="new" title="User:Nosrep (page does not exist)">Nosrep</a>
+</td>
+<td>2022-02-05 23:58:14
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2022-02-06 to 2022-02-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Pythops&amp;action=edit&amp;redlink=1" class="new" title="User:Pythops (page does not exist)">Pythops</a>
+</td>
+<td>2022-04-13 17:53:37
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-05-23 to 2024-05-23 (1 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>0.00
+</td>
+<td>0.04
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rayr&amp;action=edit&amp;redlink=1" class="new" title="User:Rayr (page does not exist)">Rayr</a>
+</td>
+<td>2022-09-10 15:36:21
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2022-09-10 to 2022-09-10 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:YjzJim&amp;action=edit&amp;redlink=1" class="new" title="User:YjzJim (page does not exist)">YjzJim</a>
+</td>
+<td>2023-12-11 07:49:05
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2023-12-11 to 2023-12-11 (2 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:256&amp;action=edit&amp;redlink=1" class="new" title="User:256 (page does not exist)">256</a>
+</td>
+<td>2024-01-04 12:01:07
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-01-04 to 2024-01-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Zatrit&amp;action=edit&amp;redlink=1" class="new" title="User:Zatrit (page does not exist)">Zatrit</a>
+</td>
+<td>2024-04-15 12:48:10
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>
+<span title="1 days, from 2024-04-15 to 2024-04-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>0.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Shelvacu&amp;action=edit&amp;redlink=1" class="new" title="User:Shelvacu (page does not exist)">Shelvacu</a>
+</td>
+<td>2016-04-25 03:37:28
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2018-02-03 to 2018-02-03 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Averagejoey2000&amp;action=edit&amp;redlink=1" class="new" title="User:Averagejoey2000 (page does not exist)">Averagejoey2000</a>
+</td>
+<td>2017-01-04 06:32:09
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2017-01-04 to 2017-01-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Pasbi&amp;action=edit&amp;redlink=1" class="new" title="User:Pasbi (page does not exist)">Pasbi</a>
+</td>
+<td>2018-05-14 10:59:45
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2018-05-14 to 2018-05-14 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Nhermosilla14&amp;action=edit&amp;redlink=1" class="new" title="User:Nhermosilla14 (page does not exist)">Nhermosilla14</a>
+</td>
+<td>2019-06-20 01:20:22
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2019-06-20 to 2019-06-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Andybug&amp;action=edit&amp;redlink=1" class="new" title="User:Andybug (page does not exist)">Andybug</a>
+</td>
+<td>2019-10-12 21:54:53
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2022-02-17 to 2022-02-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Stikonas&amp;action=edit&amp;redlink=1" class="new" title="User:Stikonas (page does not exist)">Stikonas</a>
+</td>
+<td>2021-07-04 14:42:02
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2021-07-04 to 2021-07-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Andean_Archer&amp;action=edit&amp;redlink=1" class="new" title="User:Andean Archer (page does not exist)">Andean Archer</a>
+</td>
+<td>2022-03-03 02:26:25
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2022-03-03 to 2022-03-03 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Puqns67&amp;action=edit&amp;redlink=1" class="new" title="User:Puqns67 (page does not exist)">Puqns67</a>
+</td>
+<td>2022-09-04 03:33:27
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2022-09-04 to 2022-09-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rogg&amp;action=edit&amp;redlink=1" class="new" title="User:Rogg (page does not exist)">Rogg</a>
+</td>
+<td>2022-12-23 08:02:13
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2022-12-23 to 2022-12-23 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Dismrt&amp;action=edit&amp;redlink=1" class="new" title="User:Dismrt (page does not exist)">Dismrt</a>
+</td>
+<td>2023-03-05 17:15:58
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2023-03-05 to 2023-03-05 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rio6&amp;action=edit&amp;redlink=1" class="new" title="User:Rio6 (page does not exist)">Rio6</a>
+</td>
+<td>2023-03-12 16:47:15
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2023-03-12 to 2023-03-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Benwaffle&amp;action=edit&amp;redlink=1" class="new" title="User:Benwaffle (page does not exist)">Benwaffle</a>
+</td>
+<td>2023-03-17 20:23:34
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2023-03-17 to 2023-03-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:WillNorris&amp;action=edit&amp;redlink=1" class="new" title="User:WillNorris (page does not exist)">WillNorris</a>
+</td>
+<td>2023-05-20 21:24:14
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2023-05-20 to 2023-05-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>0.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Eritque0arcus&amp;action=edit&amp;redlink=1" class="new" title="User:Eritque0arcus (page does not exist)">Eritque0arcus</a>
+</td>
+<td>2023-10-03 17:23:58
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2023-10-03 to 2023-10-03 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:014&amp;action=edit&amp;redlink=1" class="new" title="User:014 (page does not exist)">014</a>
+</td>
+<td>2024-01-05 01:18:21
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-01-05 to 2024-01-05 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>0.01
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Meadow&amp;action=edit&amp;redlink=1" class="new" title="User:Meadow (page does not exist)">Meadow</a>
+</td>
+<td>2024-06-20 13:38:59
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>
+<span title="1 days, from 2024-06-20 to 2024-06-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>0.08
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jvreeland&amp;action=edit&amp;redlink=1" class="new" title="User:Jvreeland (page does not exist)">Jvreeland</a>
+</td>
+<td>2015-03-12 16:38:50
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-29 to 2024-07-29 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Hlzr&amp;action=edit&amp;redlink=1" class="new" title="User:Hlzr (page does not exist)">Hlzr</a>
+</td>
+<td>2016-04-17 21:22:51
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Alkaid&amp;action=edit&amp;redlink=1" class="new" title="User:Alkaid (page does not exist)">Alkaid</a>
+</td>
+<td>2021-05-16 06:48:20
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-08 to 2024-07-08 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Paggas&amp;action=edit&amp;redlink=1" class="new" title="User:Paggas (page does not exist)">Paggas</a>
+</td>
+<td>2021-07-11 14:22:50
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-29 to 2024-07-29 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:CptLucifer&amp;action=edit&amp;redlink=1" class="new" title="User:CptLucifer (page does not exist)">CptLucifer</a>
+</td>
+<td>2021-09-24 15:45:10
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-09 to 2024-07-09 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lobaluna&amp;action=edit&amp;redlink=1" class="new" title="User:Lobaluna (page does not exist)">Lobaluna</a>
+</td>
+<td>2023-04-24 03:13:23
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Wayfly&amp;action=edit&amp;redlink=1" class="new" title="User:Wayfly (page does not exist)">Wayfly</a>
+</td>
+<td>2023-07-20 11:19:41
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-19 to 2024-07-19 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:CuteistFox&amp;action=edit&amp;redlink=1" class="new" title="User:CuteistFox (page does not exist)">CuteistFox</a>
+</td>
+<td>2024-05-02 16:57:02
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-04 to 2024-07-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Develux&amp;action=edit&amp;redlink=1" class="new" title="User:Develux (page does not exist)">Develux</a>
+</td>
+<td>2024-05-26 07:15:28
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.01
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Prott&amp;action=edit&amp;redlink=1" class="new" title="User:Prott (page does not exist)">Prott</a>
+</td>
+<td>2024-06-06 17:05:13
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.02
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Akelopes&amp;action=edit&amp;redlink=1" class="new" title="User:Akelopes (page does not exist)">Akelopes</a>
+</td>
+<td>2024-07-02 02:51:44
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-02 to 2024-07-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Yazeed4&amp;action=edit&amp;redlink=1" class="new" title="User:Yazeed4 (page does not exist)">Yazeed4</a>
+</td>
+<td>2024-07-02 21:30:10
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-02 to 2024-07-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cazlq&amp;action=edit&amp;redlink=1" class="new" title="User:Cazlq (page does not exist)">Cazlq</a>
+</td>
+<td>2024-07-02 23:27:10
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-02 to 2024-07-02 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.03
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ericswpark&amp;action=edit&amp;redlink=1" class="new" title="User:Ericswpark (page does not exist)">Ericswpark</a>
+</td>
+<td>2024-07-04 04:26:18
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-04 to 2024-07-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cracychaos&amp;action=edit&amp;redlink=1" class="new" title="User:Cracychaos (page does not exist)">Cracychaos</a>
+</td>
+<td>2024-07-04 14:09:02
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-04 to 2024-07-04 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Cache-22&amp;action=edit&amp;redlink=1" class="new" title="User:Cache-22 (page does not exist)">Cache-22</a>
+</td>
+<td>2024-07-04 16:03:28
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-21 to 2024-07-21 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Darfk&amp;action=edit&amp;redlink=1" class="new" title="User:Darfk (page does not exist)">Darfk</a>
+</td>
+<td>2024-07-05 05:51:02
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-05 to 2024-07-05 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:BuriedBug&amp;action=edit&amp;redlink=1" class="new" title="User:BuriedBug (page does not exist)">BuriedBug</a>
+</td>
+<td>2024-07-05 15:52:11
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-05 to 2024-07-05 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Hmeqo&amp;action=edit&amp;redlink=1" class="new" title="User:Hmeqo (page does not exist)">Hmeqo</a>
+</td>
+<td>2024-07-06 07:40:17
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-06 to 2024-07-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:UHasanU&amp;action=edit&amp;redlink=1" class="new" title="User:UHasanU (page does not exist)">UHasanU</a>
+</td>
+<td>2024-07-06 10:57:53
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-06 to 2024-07-06 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:DylanJava&amp;action=edit&amp;redlink=1" class="new" title="User:DylanJava (page does not exist)">DylanJava</a>
+</td>
+<td>2024-07-07 20:09:22
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-07 to 2024-07-07 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lucianobalzano007&amp;action=edit&amp;redlink=1" class="new" title="User:Lucianobalzano007 (page does not exist)">Lucianobalzano007</a>
+</td>
+<td>2024-07-07 20:49:10
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-08 to 2024-07-08 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:WinterSunset95&amp;action=edit&amp;redlink=1" class="new" title="User:WinterSunset95 (page does not exist)">WinterSunset95</a>
+</td>
+<td>2024-07-08 04:48:03
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-08 to 2024-07-08 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Prehistorical&amp;action=edit&amp;redlink=1" class="new" title="User:Prehistorical (page does not exist)">Prehistorical</a>
+</td>
+<td>2024-07-08 17:26:35
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-08 to 2024-07-08 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Mijenix&amp;action=edit&amp;redlink=1" class="new" title="User:Mijenix (page does not exist)">Mijenix</a>
+</td>
+<td>2024-07-09 12:21:00
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-09 to 2024-07-09 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Bloated_rose&amp;action=edit&amp;redlink=1" class="new" title="User:Bloated rose (page does not exist)">Bloated rose</a>
+</td>
+<td>2024-07-09 15:30:22
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-09 to 2024-07-09 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:DustBun&amp;action=edit&amp;redlink=1" class="new" title="User:DustBun (page does not exist)">DustBun</a>
+</td>
+<td>2024-07-09 17:37:43
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-09 to 2024-07-09 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.04
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lucas555&amp;action=edit&amp;redlink=1" class="new" title="User:Lucas555 (page does not exist)">Lucas555</a>
+</td>
+<td>2024-07-12 08:08:57
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Atomic_Max&amp;action=edit&amp;redlink=1" class="new" title="User:Atomic Max (page does not exist)">Atomic Max</a>
+</td>
+<td>2024-07-12 10:52:08
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Gravelka&amp;action=edit&amp;redlink=1" class="new" title="User:Gravelka (page does not exist)">Gravelka</a>
+</td>
+<td>2024-07-12 14:57:50
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-12 to 2024-07-12 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Merith&amp;action=edit&amp;redlink=1" class="new" title="User:Merith (page does not exist)">Merith</a>
+</td>
+<td>2024-07-12 22:53:42
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-13 to 2024-07-13 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tobiwan.kenobi&amp;action=edit&amp;redlink=1" class="new" title="User:Tobiwan.kenobi (page does not exist)">Tobiwan.kenobi</a>
+</td>
+<td>2024-07-13 10:54:28
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-13 to 2024-07-13 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.05
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Lastgenius&amp;action=edit&amp;redlink=1" class="new" title="User:Lastgenius (page does not exist)">Lastgenius</a>
+</td>
+<td>2024-07-14 13:59:37
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-14 to 2024-07-14 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:DeKay&amp;action=edit&amp;redlink=1" class="new" title="User:DeKay (page does not exist)">DeKay</a>
+</td>
+<td>2024-07-15 02:36:26
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-15 to 2024-07-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ReYuki&amp;action=edit&amp;redlink=1" class="new" title="User:ReYuki (page does not exist)">ReYuki</a>
+</td>
+<td>2024-07-15 06:33:14
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-15 to 2024-07-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Magmaus3&amp;action=edit&amp;redlink=1" class="new" title="User:Magmaus3 (page does not exist)">Magmaus3</a>
+</td>
+<td>2024-07-15 12:28:27
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-15 to 2024-07-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:RobertPPAP&amp;action=edit&amp;redlink=1" class="new" title="User:RobertPPAP (page does not exist)">RobertPPAP</a>
+</td>
+<td>2024-07-15 20:57:14
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-15 to 2024-07-15 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:ColdReactive&amp;action=edit&amp;redlink=1" class="new" title="User:ColdReactive (page does not exist)">ColdReactive</a>
+</td>
+<td>2024-07-16 00:04:42
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-16 to 2024-07-16 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rsks&amp;action=edit&amp;redlink=1" class="new" title="User:Rsks (page does not exist)">Rsks</a>
+</td>
+<td>2024-07-16 00:56:39
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-16 to 2024-07-16 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Maybl8&amp;action=edit&amp;redlink=1" class="new" title="User:Maybl8 (page does not exist)">Maybl8</a>
+</td>
+<td>2024-07-16 13:31:36
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-16 to 2024-07-16 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jlov&amp;action=edit&amp;redlink=1" class="new" title="User:Jlov (page does not exist)">Jlov</a>
+</td>
+<td>2024-07-16 19:34:08
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-25 to 2024-07-25 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.06
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Runxiyu&amp;action=edit&amp;redlink=1" class="new" title="User:Runxiyu (page does not exist)">Runxiyu</a>
+</td>
+<td>2024-07-17 05:42:24
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-17 to 2024-07-17 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.07
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Manuel&amp;action=edit&amp;redlink=1" class="new" title="User:Manuel (page does not exist)">Manuel</a>
+</td>
+<td>2024-07-19 15:29:28
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-19 to 2024-07-19 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.08
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Arch-enemy&amp;action=edit&amp;redlink=1" class="new" title="User:Arch-enemy (page does not exist)">Arch-enemy</a>
+</td>
+<td>2024-07-20 00:21:19
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-20 to 2024-07-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.08
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Zdrgvikh&amp;action=edit&amp;redlink=1" class="new" title="User:Zdrgvikh (page does not exist)">Zdrgvikh</a>
+</td>
+<td>2024-07-20 05:12:49
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-20 to 2024-07-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.08
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Kannamori&amp;action=edit&amp;redlink=1" class="new" title="User:Kannamori (page does not exist)">Kannamori</a>
+</td>
+<td>2024-07-20 20:01:47
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-20 to 2024-07-20 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.08
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Yonnji&amp;action=edit&amp;redlink=1" class="new" title="User:Yonnji (page does not exist)">Yonnji</a>
+</td>
+<td>2024-07-21 13:19:27
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-21 to 2024-07-21 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rajdeep&amp;action=edit&amp;redlink=1" class="new" title="User:Rajdeep (page does not exist)">Rajdeep</a>
+</td>
+<td>2024-07-21 17:20:51
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-21 to 2024-07-21 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.09
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Tommodev&amp;action=edit&amp;redlink=1" class="new" title="User:Tommodev (page does not exist)">Tommodev</a>
+</td>
+<td>2024-07-22 22:57:28
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-22 to 2024-07-22 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.10
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Manuth&amp;action=edit&amp;redlink=1" class="new" title="User:Manuth (page does not exist)">Manuth</a>
+</td>
+<td>2024-07-23 12:23:04
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:EarthenMound&amp;action=edit&amp;redlink=1" class="new" title="User:EarthenMound (page does not exist)">EarthenMound</a>
+</td>
+<td>2024-07-23 15:58:45
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-23 to 2024-07-23 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.11
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Leoberbert&amp;action=edit&amp;redlink=1" class="new" title="User:Leoberbert (page does not exist)">Leoberbert</a>
+</td>
+<td>2024-07-24 02:54:18
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:$Xynopxyz&amp;action=edit&amp;redlink=1" class="new" title="User:$Xynopxyz (page does not exist)">$Xynopxyz</a>
+</td>
+<td>2024-07-24 05:10:24
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rewgs&amp;action=edit&amp;redlink=1" class="new" title="User:Rewgs (page does not exist)">Rewgs</a>
+</td>
+<td>2024-07-24 05:41:37
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:0xMomo&amp;action=edit&amp;redlink=1" class="new" title="User:0xMomo (page does not exist)">0xMomo</a>
+</td>
+<td>2024-07-24 20:45:26
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-24 to 2024-07-24 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.12
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:TheMooseiest&amp;action=edit&amp;redlink=1" class="new" title="User:TheMooseiest (page does not exist)">TheMooseiest</a>
+</td>
+<td>2024-07-25 00:31:02
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-25 to 2024-07-25 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.14
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jcj83429&amp;action=edit&amp;redlink=1" class="new" title="User:Jcj83429 (page does not exist)">Jcj83429</a>
+</td>
+<td>2024-07-25 04:20:38
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-25 to 2024-07-25 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.14
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:JL2210&amp;action=edit&amp;redlink=1" class="new" title="User:JL2210 (page does not exist)">JL2210</a>
+</td>
+<td>2024-07-26 02:55:21
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-26 to 2024-07-26 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.17
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:YoyPa&amp;action=edit&amp;redlink=1" class="new" title="User:YoyPa (page does not exist)">YoyPa</a>
+</td>
+<td>2024-07-26 08:48:18
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-26 to 2024-07-26 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.17
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Ichigosama69&amp;action=edit&amp;redlink=1" class="new" title="User:Ichigosama69 (page does not exist)">Ichigosama69</a>
+</td>
+<td>2024-07-27 06:05:35
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-27 to 2024-07-27 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.20
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:B46c0493bc9a86ca&amp;action=edit&amp;redlink=1" class="new" title="User:B46c0493bc9a86ca (page does not exist)">B46c0493bc9a86ca</a>
+</td>
+<td>2024-07-27 19:51:07
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-27 to 2024-07-27 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.20
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Felecarp&amp;action=edit&amp;redlink=1" class="new" title="User:Felecarp (page does not exist)">Felecarp</a>
+</td>
+<td>2024-07-28 07:40:06
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-28 to 2024-07-28 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.25
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Rom3es&amp;action=edit&amp;redlink=1" class="new" title="User:Rom3es (page does not exist)">Rom3es</a>
+</td>
+<td>2024-07-28 11:43:08
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-28 to 2024-07-28 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.25
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Walton&amp;action=edit&amp;redlink=1" class="new" title="User:Walton (page does not exist)">Walton</a>
+</td>
+<td>2024-07-28 21:02:04
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-28 to 2024-07-28 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.25
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Sanjeebmahala&amp;action=edit&amp;redlink=1" class="new" title="User:Sanjeebmahala (page does not exist)">Sanjeebmahala</a>
+</td>
+<td>2024-07-28 21:06:29
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-28 to 2024-07-28 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.25
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Sweisgerber.dev&amp;action=edit&amp;redlink=1" class="new" title="User:Sweisgerber.dev (page does not exist)">Sweisgerber.dev</a>
+</td>
+<td>2024-07-29 09:28:17
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-29 to 2024-07-29 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.33
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Etanot&amp;action=edit&amp;redlink=1" class="new" title="User:Etanot (page does not exist)">Etanot</a>
+</td>
+<td>2024-07-30 13:33:00
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-30 to 2024-07-30 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.50
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jeremyd&amp;action=edit&amp;redlink=1" class="new" title="User:Jeremyd (page does not exist)">Jeremyd</a>
+</td>
+<td>2024-07-30 15:28:06
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-30 to 2024-07-30 (1 edits)">1</span>
+</td>
+<td>0
+</td>
+<td>0.50
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Uclalug&amp;action=edit&amp;redlink=1" class="new" title="User:Uclalug (page does not exist)">Uclalug</a>
+</td>
+<td>2024-07-31 04:03:33
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>1.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:MichaelHerold&amp;action=edit&amp;redlink=1" class="new" title="User:MichaelHerold (page does not exist)">MichaelHerold</a>
+</td>
+<td>2024-07-31 14:59:13
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>1.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Obsidian&amp;action=edit&amp;redlink=1" class="new" title="User:Obsidian (page does not exist)">Obsidian</a>
+</td>
+<td>2024-07-31 22:52:09
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>
+<span title="1 days, from 2024-07-31 to 2024-07-31 (1 edits)">1</span>
+</td>
+<td>1.00
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kynikos.html" title="User:Kynikos">Kynikos</a>
+</td>
+<td>2011-01-13 11:20:14
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator</a>, <a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Bureaucrats">Bureaucrat</a>
+</td>
+<td>0
+</td>
+<td>24225
+</td>
+<td>
+<span title="177 days, from 2011-12-10 to 2012-06-03 (3591 edits)">177</span>
+</td>
+<td>0
+</td>
+<td>4.89
+</td>
+<td>5.08
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kynikos.bot.html" title="User:Kynikos.bot">Kynikos.bot</a>
+</td>
+<td>2012-02-11 16:52:05
+</td>
+<td>
+<a href="../en/ArchWiki:Bots.html" title="ArchWiki:Bots">Bot</a>
+</td>
+<td>0
+</td>
+<td>21768
+</td>
+<td>
+<span title="78 days, from 2015-02-04 to 2015-04-23 (245 edits)">78</span>
+</td>
+<td>0
+</td>
+<td>4.78
+</td>
+<td>5.24
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Larivact.html" title="User:Larivact">Larivact</a>
+</td>
+<td>2015-05-08 19:37:22
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>13329
+</td>
+<td>
+<span title="37 days, from 2018-06-03 to 2018-07-09 (907 edits)">37</span>
+</td>
+<td>0
+</td>
+<td>3.95
+</td>
+<td>8.41
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Thestinger.html" title="User:Thestinger">Thestinger</a>
+</td>
+<td>2010-01-23 14:31:31
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>0
+</td>
+<td>11818
+</td>
+<td>
+<span title="20 days, from 2010-11-18 to 2010-12-07 (1067 edits)">20</span>
+</td>
+<td>0
+</td>
+<td>2.23
+</td>
+<td>2.61
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Blackteahamburger.html" title="User:Blackteahamburger">Blackteahamburger</a>
+</td>
+<td>2020-02-14 10:54:19
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>9566
+</td>
+<td>
+<span title="138 days, from 2020-04-18 to 2020-09-02 (8219 edits)">138</span>
+</td>
+<td>0
+</td>
+<td>5.87
+</td>
+<td>9.80
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:RafaelFF.html" title="User:RafaelFF">RafaelFF</a>
+</td>
+<td>2011-08-10 15:44:47
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>9502
+</td>
+<td>
+<span title="21 days, from 2018-10-24 to 2018-11-14 (563 edits)">21</span>
+</td>
+<td>0
+</td>
+<td>2.00
+</td>
+<td>2.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:DerpishCat.html" title="User:DerpishCat">DerpishCat</a>
+</td>
+<td>2014-05-12 22:42:57
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>9137
+</td>
+<td>
+<span title="159 days, from 2021-03-12 to 2021-08-17 (7424 edits)">159</span>
+</td>
+<td>0
+</td>
+<td>2.45
+</td>
+<td>2.48
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kusakata.html" title="User:Kusakata">Kusakata</a>
+</td>
+<td>2012-10-20 05:38:50
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>7539
+</td>
+<td>
+<span title="181 days, from 2016-09-20 to 2017-03-19 (376 edits)">181</span>
+</td>
+<td>0
+</td>
+<td>1.75
+</td>
+<td>1.84
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Pedro.html" title="User:Pedro">Pedro</a>
+</td>
+<td>2012-08-06 20:57:43
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>7399
+</td>
+<td>
+<span title="19 days, from 2012-11-02 to 2012-11-20 (409 edits)">19</span>
+</td>
+<td>0
+</td>
+<td>1.69
+</td>
+<td>2.53
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Pointone.html" title="User:Pointone">Pointone</a>
+</td>
+<td>2008-12-02 16:32:44
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator Fellow</a>
+</td>
+<td>0
+</td>
+<td>6565
+</td>
+<td>
+<span title="37 days, from 2010-02-28 to 2010-04-06 (859 edits)">37</span>
+</td>
+<td>0
+</td>
+<td>1.15
+</td>
+<td>4.34
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:AlonsoLP.html" title="User:AlonsoLP">AlonsoLP</a>
+</td>
+<td>2017-02-14 15:58:29
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>5671
+</td>
+<td>
+<span title="104 days, from 2018-08-01 to 2018-11-13 (2562 edits)">104</span>
+</td>
+<td>0
+</td>
+<td>2.08
+</td>
+<td>2.79
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Karol.html" title="User:Karol">Karol</a>
+</td>
+<td>2009-05-13 11:12:22
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>0
+</td>
+<td>5284
+</td>
+<td>
+<span title="99 days, from 2011-08-08 to 2011-11-14 (1283 edits)">99</span>
+</td>
+<td>0
+</td>
+<td>0.95
+</td>
+<td>1.31
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Rdeckard.html" title="User:Rdeckard">Rdeckard</a>
+</td>
+<td>2015-01-28 16:11:48
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>4684
+</td>
+<td>
+<span title="42 days, from 2016-03-06 to 2016-04-16 (795 edits)">42</span>
+</td>
+<td>0
+</td>
+<td>1.35
+</td>
+<td>2.60
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Flyingpig.html" title="User:Flyingpig">Flyingpig</a>
+</td>
+<td>2020-05-14 22:32:03
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>4588
+</td>
+<td>
+<span title="84 days, from 2021-06-26 to 2021-09-17 (1842 edits)">84</span>
+</td>
+<td>0
+</td>
+<td>2.98
+</td>
+<td>4.82
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Misfit138.html" title="User:Misfit138">Misfit138</a>
+</td>
+<td>2007-04-21 19:28:58
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Administrators">Administrator Fellow</a>
+</td>
+<td>0
+</td>
+<td>4561
+</td>
+<td>
+<span title="30 days, from 2008-03-02 to 2008-03-31 (451 edits)">30</span>
+</td>
+<td>0
+</td>
+<td>0.72
+</td>
+<td>0.78
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Svito.html" title="User:Svito">Svito</a>
+</td>
+<td>2013-10-28 16:20:56
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>4389
+</td>
+<td>
+<span title="31 days, from 2018-08-14 to 2018-09-13 (411 edits)">31</span>
+</td>
+<td>0
+</td>
+<td>1.12
+</td>
+<td>1.15
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Veleno77.html" title="User:Veleno77">Veleno77</a>
+</td>
+<td>2010-04-03 10:36:35
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>4361
+</td>
+<td>
+<span title="23 days, from 2010-11-24 to 2010-12-16 (390 edits)">23</span>
+</td>
+<td>0
+</td>
+<td>0.83
+</td>
+<td>1.03
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Chazza.html" title="User:Chazza">Chazza</a>
+</td>
+<td>2013-10-27 10:11:47
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>3965
+</td>
+<td>
+<span title="22 days, from 2015-08-27 to 2015-09-17 (202 edits)">22</span>
+</td>
+<td>0
+</td>
+<td>1.01
+</td>
+<td>1.10
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Jstjohn.html" title="User:Jstjohn">Jstjohn</a>
+</td>
+<td>2011-06-28 19:58:47
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>3922
+</td>
+<td>
+<span title="12 days, from 2011-10-20 to 2011-11-01 (208 edits)">12</span>
+</td>
+<td>0
+</td>
+<td>0.82
+</td>
+<td>1.12
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kycok.html" title="User:Kycok">Kycok</a>
+</td>
+<td>2013-01-25 12:47:08
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>3441
+</td>
+<td>
+<span title="21 days, from 2014-05-15 to 2014-06-04 (346 edits)">21</span>
+</td>
+<td>0
+</td>
+<td>0.82
+</td>
+<td>0.93
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Kewl.html" title="User:Kewl">Kewl</a>
+</td>
+<td>2017-09-26 15:03:31
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>3353
+</td>
+<td>
+<span title="77 days, from 2018-02-19 to 2018-05-06 (642 edits)">77</span>
+</td>
+<td>0
+</td>
+<td>1.34
+</td>
+<td>1.55
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Thayer.html" title="User:Thayer">Thayer</a>
+</td>
+<td>2007-05-26 17:30:07
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>2923
+</td>
+<td>
+<span title="7 days, from 2007-09-08 to 2007-09-14 (394 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.47
+</td>
+<td>0.52
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Det.html" title="User:Det">Det</a>
+</td>
+<td>2010-02-19 15:40:04
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>2903
+</td>
+<td>
+<span title="12 days, from 2012-07-12 to 2012-07-23 (227 edits)">12</span>
+</td>
+<td>0
+</td>
+<td>0.55
+</td>
+<td>1.00
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Duodai.html" title="User:Duodai">Duodai</a>
+</td>
+<td>2019-06-26 08:39:30
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>2884
+</td>
+<td>
+<span title="12 days, from 2019-12-15 to 2019-12-27 (80 edits)">12</span>
+</td>
+<td>0
+</td>
+<td>1.55
+</td>
+<td>4.02
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Gen2ly.html" title="User:Gen2ly">Gen2ly</a>
+</td>
+<td>2009-03-01 15:51:57
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>2661
+</td>
+<td>
+<span title="14 days, from 2009-10-30 to 2009-11-12 (103 edits)">14</span>
+</td>
+<td>0
+</td>
+<td>0.47
+</td>
+<td>1.20
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Andy_Crowd.html" title="User:Andy Crowd">Andy Crowd</a>
+</td>
+<td>2014-03-28 09:48:07
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>2285
+</td>
+<td>
+<span title="26 days, from 2015-01-18 to 2015-02-12 (178 edits)">26</span>
+</td>
+<td>0
+</td>
+<td>0.60
+</td>
+<td>2.54
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Adamlau.html" title="User:Adamlau">Adamlau</a>
+</td>
+<td>2009-02-10 10:18:42
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>2250
+</td>
+<td>
+<span title="12 days, from 2010-08-23 to 2010-09-04 (521 edits)">12</span>
+</td>
+<td>0
+</td>
+<td>0.40
+</td>
+<td>0.54
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Francoism.html" title="User:Francoism">Francoism</a>
+</td>
+<td>2016-01-04 13:11:49
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>2022
+</td>
+<td>
+<span title="6 days, from 2017-07-11 to 2017-07-17 (26 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.65
+</td>
+<td>0.81
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Blackx.html" title="User:Blackx">Blackx</a>
+</td>
+<td>2014-07-10 20:03:03
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>2000
+</td>
+<td>
+<span title="17 days, from 2014-12-14 to 2014-12-31 (516 edits)">17</span>
+</td>
+<td>0
+</td>
+<td>0.54
+</td>
+<td>1.33
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Allan.html" title="User:Allan">Allan</a>
+</td>
+<td>2007-06-09 03:02:23
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Developer</a>
+</td>
+<td>0
+</td>
+<td>1905
+</td>
+<td>
+<span title="9 days, from 2008-05-05 to 2008-05-13 (29 edits)">9</span>
+</td>
+<td>0
+</td>
+<td>0.30
+</td>
+<td>0.34
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:SlavMetal.html" title="User:SlavMetal">SlavMetal</a>
+</td>
+<td>2018-05-05 20:13:47
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1839
+</td>
+<td>
+<span title="13 days, from 2019-03-23 to 2019-04-05 (66 edits)">13</span>
+</td>
+<td>0
+</td>
+<td>0.81
+</td>
+<td>0.85
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Gog.html" title="User:Gog">Gog</a>
+</td>
+<td>2009-10-16 02:27:16
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1804
+</td>
+<td>
+<span title="14 days, from 2009-10-16 to 2009-10-30 (1804 edits)">14</span>
+</td>
+<td>0
+</td>
+<td>0.33
+</td>
+<td>128.86
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Strcat&amp;action=edit&amp;redlink=1" class="new" title="User:Strcat (page does not exist)">Strcat</a>
+</td>
+<td>2011-09-04 02:14:50
+</td>
+<td>
+<a href="../en/ArchWiki:Bots.html" title="ArchWiki:Bots">Bot</a>
+</td>
+<td>0
+</td>
+<td>1689
+</td>
+<td>
+<span title="4 days, from 2011-09-04 to 2011-09-07 (651 edits)">4</span>
+</td>
+<td>0
+</td>
+<td>0.36
+</td>
+<td>17.06
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Quequotion.html" title="User:Quequotion">Quequotion</a>
+</td>
+<td>2014-02-19 14:39:55
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1666
+</td>
+<td>
+<span title="8 days, from 2019-02-09 to 2019-02-16 (106 edits)">8</span>
+</td>
+<td>0
+</td>
+<td>0.44
+</td>
+<td>0.51
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Snowman.html" title="User:Snowman">Snowman</a>
+</td>
+<td>2005-08-04 15:06:34
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1618
+</td>
+<td>
+<span title="10 days, from 2007-01-22 to 2007-01-31 (698 edits)">10</span>
+</td>
+<td>0
+</td>
+<td>0.23
+</td>
+<td>0.48
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Emiralle.html" title="User:Emiralle">Emiralle</a>
+</td>
+<td>2011-08-26 19:41:09
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>1549
+</td>
+<td>
+<span title="13 days, from 2011-09-07 to 2011-09-19 (831 edits)">13</span>
+</td>
+<td>0
+</td>
+<td>0.33
+</td>
+<td>0.95
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:CodingKoopa.html" title="User:CodingKoopa">CodingKoopa</a>
+</td>
+<td>2018-07-09 00:23:11
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>1535
+</td>
+<td>
+<span title="12 days, from 2022-08-07 to 2022-08-18 (90 edits)">12</span>
+</td>
+<td>0
+</td>
+<td>0.69
+</td>
+<td>0.71
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Maveloth.html" title="User:Maveloth">Maveloth</a>
+</td>
+<td>2010-04-22 14:43:16
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1500
+</td>
+<td>
+<span title="30 days, from 2011-09-19 to 2011-10-18 (560 edits)">30</span>
+</td>
+<td>0
+</td>
+<td>0.29
+</td>
+<td>0.85
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Skydiver.html" title="User:Skydiver">Skydiver</a>
+</td>
+<td>2011-11-23 05:47:08
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1491
+</td>
+<td>
+<span title="13 days, from 2012-01-05 to 2012-01-18 (188 edits)">13</span>
+</td>
+<td>0
+</td>
+<td>0.32
+</td>
+<td>0.80
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Wacek.html" title="User:Wacek">Wacek</a>
+</td>
+<td>2017-03-21 18:47:15
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1478
+</td>
+<td>
+<span title="6 days, from 2018-03-21 to 2018-03-26 (315 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.55
+</td>
+<td>0.67
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Umby213.html" title="User:Umby213">Umby213</a>
+</td>
+<td>2011-03-06 13:28:51
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1403
+</td>
+<td>
+<span title="21 days, from 2012-02-24 to 2012-03-16 (131 edits)">21</span>
+</td>
+<td>0
+</td>
+<td>0.29
+</td>
+<td>0.66
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Vladimir_Shatalin.html" title="User:Vladimir Shatalin">Vladimir Shatalin</a>
+</td>
+<td>2015-08-24 06:22:51
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1399
+</td>
+<td>
+<span title="11 days, from 2015-09-30 to 2015-10-10 (316 edits)">11</span>
+</td>
+<td>0
+</td>
+<td>0.43
+</td>
+<td>1.35
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Ubone.html" title="User:Ubone">Ubone</a>
+</td>
+<td>2015-04-14 11:44:38
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1391
+</td>
+<td>
+<span title="13 days, from 2018-09-22 to 2018-10-04 (140 edits)">13</span>
+</td>
+<td>0
+</td>
+<td>0.41
+</td>
+<td>0.47
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Hilinus.html" title="User:Hilinus">Hilinus</a>
+</td>
+<td>2011-03-20 20:10:45
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1337
+</td>
+<td>
+<span title="6 days, from 2012-04-03 to 2012-04-09 (8 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.27
+</td>
+<td>0.81
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Flu.html" title="User:Flu">Flu</a>
+</td>
+<td>2011-07-19 17:07:46
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>1330
+</td>
+<td>
+<span title="21 days, from 2013-05-17 to 2013-06-06 (294 edits)">21</span>
+</td>
+<td>0
+</td>
+<td>0.28
+</td>
+<td>0.79
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Silverhammermba.html" title="User:Silverhammermba">Silverhammermba</a>
+</td>
+<td>2013-02-20 02:17:24
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>1325
+</td>
+<td>
+<span title="11 days, from 2016-03-01 to 2016-03-11 (61 edits)">11</span>
+</td>
+<td>0
+</td>
+<td>0.32
+</td>
+<td>0.33
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Axper.html" title="User:Axper">Axper</a>
+</td>
+<td>2013-03-01 13:42:14
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1259
+</td>
+<td>
+<span title="11 days, from 2014-06-08 to 2014-06-19 (371 edits)">11</span>
+</td>
+<td>0
+</td>
+<td>0.30
+</td>
+<td>0.65
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Louipc.html" title="User:Louipc">Louipc</a>
+</td>
+<td>2006-10-08 17:27:34
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1233
+</td>
+<td>
+<span title="6 days, from 2008-05-28 to 2008-06-03 (108 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.19
+</td>
+<td>0.36
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Pypi.html" title="User:Pypi">Pypi</a>
+</td>
+<td>2014-07-09 07:11:32
+</td>
+<td>
+<a href="../en/ArchWiki:Maintenance_Team.html" class="mw-redirect" title="ArchWiki:Maintainers">Maintainer</a>
+</td>
+<td>0
+</td>
+<td>1210
+</td>
+<td>
+<span title="7 days, from 2016-11-06 to 2016-11-12 (34 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.33
+</td>
+<td>0.42
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Totalwormage.html" title="User:Totalwormage">Totalwormage</a>
+</td>
+<td>2008-04-26 13:11:36
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1175
+</td>
+<td>
+<span title="6 days, from 2010-02-15 to 2010-02-21 (290 edits)">6</span>
+</td>
+<td>0
+</td>
+<td>0.20
+</td>
+<td>0.75
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Agent0.html" title="User:Agent0">Agent0</a>
+</td>
+<td>2014-06-19 18:57:52
+</td>
+<td>
+<a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="ArchWiki:Translators">Translator</a>
+</td>
+<td>0
+</td>
+<td>1173
+</td>
+<td>
+<span title="12 days, from 2014-12-15 to 2014-12-26 (172 edits)">12</span>
+</td>
+<td>0
+</td>
+<td>0.32
+</td>
+<td>1.66
+</td>
+</tr>
+<tr>
+<td>
+<a href="/index.php?title=User:Jyeno&amp;action=edit&amp;redlink=1" class="new" title="User:Jyeno (page does not exist)">Jyeno</a>
+</td>
+<td>2019-11-03 11:00:17
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1117
+</td>
+<td>
+<span title="11 days, from 2020-05-28 to 2020-06-08 (109 edits)">11</span>
+</td>
+<td>0
+</td>
+<td>0.64
+</td>
+<td>1.70
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Foxbunny.html" title="User:Foxbunny">Foxbunny</a>
+</td>
+<td>2006-10-31 15:19:18
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1109
+</td>
+<td>
+<span title="11 days, from 2006-11-03 to 2006-11-13 (546 edits)">11</span>
+</td>
+<td>0
+</td>
+<td>0.17
+</td>
+<td>0.36
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Rgacogne.html" title="User:Rgacogne">Rgacogne</a>
+</td>
+<td>2014-06-11 07:59:55
+</td>
+<td>
+<a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>0
+</td>
+<td>1092
+</td>
+<td>
+<span title="9 days, from 2016-04-28 to 2016-05-06 (55 edits)">9</span>
+</td>
+<td>0
+</td>
+<td>0.29
+</td>
+<td>0.46
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Erkexzcx.html" title="User:Erkexzcx">Erkexzcx</a>
+</td>
+<td>2014-10-06 11:20:52
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1068
+</td>
+<td>
+<span title="9 days, from 2014-12-30 to 2015-01-08 (87 edits)">9</span>
+</td>
+<td>0
+</td>
+<td>0.30
+</td>
+<td>0.35
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Anthraxx.html" title="User:Anthraxx">Anthraxx</a>
+</td>
+<td>2013-08-17 20:14:04
+</td>
+<td>
+<a href="../en/Package_Maintainers.html" class="mw-redirect" title="Package Maintainer">Package Maintainer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Developer</a>, <a href="../en/ArchWiki:Access_levels_and_roles.html#Roles" class="mw-redirect" title="Roles">Staff</a>
+</td>
+<td>0
+</td>
+<td>1040
+</td>
+<td>
+<span title="7 days, from 2015-03-14 to 2015-03-20 (42 edits)">7</span>
+</td>
+<td>0
+</td>
+<td>0.26
+</td>
+<td>0.30
+</td>
+</tr>
+<tr>
+<td>
+<a href="../User:Wizetek.html" title="User:Wizetek">Wizetek</a>
+</td>
+<td>2021-03-01 22:42:00
+</td>
+<td>
+</td>
+<td>0
+</td>
+<td>1017
+</td>
+<td>
+<span title="15 days, from 2020-03-30 to 2020-04-13 (220 edits)">15</span>
+</td>
+<td>0
+</td>
+<td>0.81
+</td>
+<td>0.18
+</td>
+</tr>
+</tbody>
+</table>
+<h2><span class="mw-headline" id="Global_statistics">Global statistics</span></h2>
+<p>This table shows the evolution of <a href="../Special:Statistics.html" title="Special:Statistics">Special:Statistics</a> values, updated approximately once a month.
+</p>
+<table class="wikitable sortable collapsible" border="1">
+<tbody>
+<tr>
+<th>Date</th>
+<th>Pages</th>
+<th>Content pages</th>
+<th>Edits</th>
+<th>Edits/day (last interval)</th>
+<th>Users</th>
+<th>Active users
+</th>
+</tr>
+<tr>
+<td>2023-07-01</td>
+<td>26578</td>
+<td>3717</td>
+<td>786304</td>
+<td>76</td>
+<td>53435</td>
+<td>440/350 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2023-06-01</td>
+<td>26498</td>
+<td>3697</td>
+<td>784038</td>
+<td>104</td>
+<td>53153</td>
+<td>440/383 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2023-05-01</td>
+<td>26415</td>
+<td>3697</td>
+<td>780806</td>
+<td>83</td>
+<td>52845</td>
+<td>440/369 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2023-04-01</td>
+<td>26351</td>
+<td>3694</td>
+<td>778330</td>
+<td>117</td>
+<td>52532</td>
+<td>440/362 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2023-03-05</td>
+<td>26281</td>
+<td>3682</td>
+<td>775180</td>
+<td>175</td>
+<td>52219</td>
+<td>440/385 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2023-02-01</td>
+<td>26781</td>
+<td>3714</td>
+<td>769419</td>
+<td>107</td>
+<td>51799</td>
+<td>440/362 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2023-01-01</td>
+<td>26666</td>
+<td>3694</td>
+<td>766112</td>
+<td>137</td>
+<td>51456</td>
+<td>440/376 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-12-01</td>
+<td>26578</td>
+<td>4209</td>
+<td>761854</td>
+<td>100</td>
+<td>51143</td>
+<td>440/347 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-11-01</td>
+<td>26465</td>
+<td>4185</td>
+<td>758866</td>
+<td>173</td>
+<td>50862</td>
+<td>440/373 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-10-01</td>
+<td>26319</td>
+<td>4189</td>
+<td>753510</td>
+<td>197</td>
+<td>50572</td>
+<td>440/409 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-09-01</td>
+<td>26206</td>
+<td>4293</td>
+<td>747588</td>
+<td>136</td>
+<td>50263</td>
+<td>440/378 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-07-01</td>
+<td>25969</td>
+<td>4323</td>
+<td>739181</td>
+<td>160</td>
+<td>49549</td>
+<td>440/375 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-06-02</td>
+<td>25859</td>
+<td>4350</td>
+<td>734554</td>
+<td>95</td>
+<td>49183</td>
+<td>440/383 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-05-01</td>
+<td>25799</td>
+<td>4370</td>
+<td>731525</td>
+<td>110</td>
+<td>48713</td>
+<td>440/353 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-04-01</td>
+<td>25724</td>
+<td>4378</td>
+<td>728219</td>
+<td>135</td>
+<td>48293</td>
+<td>440/346 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-03-01</td>
+<td>25652</td>
+<td>4435</td>
+<td>724042</td>
+<td>208</td>
+<td>47828</td>
+<td>440/442 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-02-01</td>
+<td>25517</td>
+<td>4634</td>
+<td>718220</td>
+<td>219</td>
+<td>47398</td>
+<td>440/480 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2022-01-01</td>
+<td>25377</td>
+<td>4850</td>
+<td>711428</td>
+<td>136</td>
+<td>46680</td>
+<td>440/430 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-12-01</td>
+<td>25234</td>
+<td>4834</td>
+<td>707215</td>
+<td>119</td>
+<td>45915</td>
+<td>440/408 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-11-01</td>
+<td>25163</td>
+<td>4840</td>
+<td>703653</td>
+<td>78</td>
+<td>45450</td>
+<td>440/374 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-10-01</td>
+<td>25107</td>
+<td>4867</td>
+<td>701225</td>
+<td>146</td>
+<td>45039</td>
+<td>440/418 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-09-01</td>
+<td>25017</td>
+<td>4879</td>
+<td>696841</td>
+<td>117</td>
+<td>44706</td>
+<td>440/388 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-08-01</td>
+<td>24900</td>
+<td>4864</td>
+<td>693220</td>
+<td>172</td>
+<td>44284</td>
+<td>440/422 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-07-02</td>
+<td>24820</td>
+<td>4902</td>
+<td>688063</td>
+<td>323</td>
+<td>43875</td>
+<td>440/400 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-06-01</td>
+<td>24420</td>
+<td>4848</td>
+<td>678061</td>
+<td>281</td>
+<td>43574</td>
+<td>440/449 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-05-01</td>
+<td>24412</td>
+<td>4856</td>
+<td>669349</td>
+<td>310</td>
+<td>43174</td>
+<td>440/464 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-04-01</td>
+<td>24067</td>
+<td>4846</td>
+<td>660057</td>
+<td>107</td>
+<td>42712</td>
+<td>440/468 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-03-01</td>
+<td>23979</td>
+<td>4790</td>
+<td>656734</td>
+<td>121</td>
+<td>42282</td>
+<td>440/513 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-02-01</td>
+<td>23851</td>
+<td>4753</td>
+<td>653353</td>
+<td>84</td>
+<td>41831</td>
+<td>440/488 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2021-01-01</td>
+<td>23790</td>
+<td>4736</td>
+<td>650757</td>
+<td>157</td>
+<td>41402</td>
+<td>440/472 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-12-01</td>
+<td>23670</td>
+<td>4720</td>
+<td>645878</td>
+<td>91</td>
+<td>40954</td>
+<td>440/438 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-11-01</td>
+<td>23549</td>
+<td>4710</td>
+<td>643150</td>
+<td>108</td>
+<td>40580</td>
+<td>440/408 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-10-01</td>
+<td>23482</td>
+<td>4697</td>
+<td>639789</td>
+<td>96</td>
+<td>40197</td>
+<td>440/422 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-09-02</td>
+<td>23388</td>
+<td>4688</td>
+<td>637013</td>
+<td>215</td>
+<td>39833</td>
+<td>440/455 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-08-01</td>
+<td>23238</td>
+<td>4655</td>
+<td>630557</td>
+<td>135</td>
+<td>39370</td>
+<td>440/435 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-07-02</td>
+<td>23102</td>
+<td>4639</td>
+<td>626387</td>
+<td>194</td>
+<td>39008</td>
+<td>440/467 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-06-01</td>
+<td>22787</td>
+<td>4638</td>
+<td>620367</td>
+<td>266</td>
+<td>38547</td>
+<td>440/523 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-05-01</td>
+<td>22443</td>
+<td>4618</td>
+<td>612124</td>
+<td>189</td>
+<td>38071</td>
+<td>440/565 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-04-01</td>
+<td>22114</td>
+<td>4575</td>
+<td>606443</td>
+<td>125</td>
+<td>37481</td>
+<td>440/464 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-03-01</td>
+<td>21997</td>
+<td>4594</td>
+<td>602553</td>
+<td>107</td>
+<td>36999</td>
+<td>440/464 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-02-01</td>
+<td>21878</td>
+<td>4585</td>
+<td>599452</td>
+<td>94</td>
+<td>36592</td>
+<td>440/419 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2020-01-01</td>
+<td>21763</td>
+<td>4559</td>
+<td>596529</td>
+<td>98</td>
+<td>36152</td>
+<td>440/382 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-12-01</td>
+<td>21610</td>
+<td>4628</td>
+<td>593487</td>
+<td>103</td>
+<td>35798</td>
+<td>440/379 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-11-01</td>
+<td>21455</td>
+<td>4608</td>
+<td>590386</td>
+<td>108</td>
+<td>35461</td>
+<td>440/374 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-10-01</td>
+<td>21337</td>
+<td>4679</td>
+<td>587053</td>
+<td>98</td>
+<td>35098</td>
+<td>440/358 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-09-01</td>
+<td>21163</td>
+<td>4694</td>
+<td>584121</td>
+<td>87</td>
+<td>34771</td>
+<td>440/350 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-08-01</td>
+<td>21058</td>
+<td>4672</td>
+<td>581435</td>
+<td>62</td>
+<td>34526</td>
+<td>440/350 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-07-01</td>
+<td>20964</td>
+<td>4647</td>
+<td>579498</td>
+<td>77</td>
+<td>34227</td>
+<td>440/344 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-06-01</td>
+<td>20887</td>
+<td>4635</td>
+<td>577178</td>
+<td>68</td>
+<td>34002</td>
+<td>440/366 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-05-01</td>
+<td>20821</td>
+<td>4620</td>
+<td>575070</td>
+<td>65</td>
+<td>33720</td>
+<td>440/339 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-04-01</td>
+<td>20744</td>
+<td>4598</td>
+<td>573112</td>
+<td>87</td>
+<td>33468</td>
+<td>440/345 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-03-01</td>
+<td>20646</td>
+<td>4581</td>
+<td>570421</td>
+<td>78</td>
+<td>33220</td>
+<td>440/392 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-02-01</td>
+<td>20587</td>
+<td>4552</td>
+<td>568228</td>
+<td>135</td>
+<td>32960</td>
+<td>440/405 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2019-01-01</td>
+<td>20389</td>
+<td>4492</td>
+<td>564049</td>
+<td>108</td>
+<td>32680</td>
+<td>440/351 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-12-01</td>
+<td>20262</td>
+<td>4451</td>
+<td>560712</td>
+<td>182</td>
+<td>32436</td>
+<td>440/388 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-11-01</td>
+<td>20031</td>
+<td>4396</td>
+<td>555263</td>
+<td>219</td>
+<td>32189</td>
+<td>440/343 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-10-01</td>
+<td>19389</td>
+<td>4295</td>
+<td>548465</td>
+<td>208</td>
+<td>31947</td>
+<td>440/367 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-09-01</td>
+<td>19114</td>
+<td>4241</td>
+<td>542232</td>
+<td>227</td>
+<td>31697</td>
+<td>440/377 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-08-01</td>
+<td>18833</td>
+<td>4234</td>
+<td>535186</td>
+<td>111</td>
+<td>31473</td>
+<td>440/330 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-07-01</td>
+<td>18691</td>
+<td>4225</td>
+<td>531753</td>
+<td>136</td>
+<td>31246</td>
+<td>440/375 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-06-01</td>
+<td>18556</td>
+<td>4206</td>
+<td>527662</td>
+<td>150</td>
+<td>31006</td>
+<td>440/394 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-05-01</td>
+<td>18415</td>
+<td>4194</td>
+<td>523020</td>
+<td>138</td>
+<td>30726</td>
+<td>440/424 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-04-01</td>
+<td>18275</td>
+<td>4163</td>
+<td>518880</td>
+<td>99</td>
+<td>30477</td>
+<td>440/387 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-03-01</td>
+<td>18208</td>
+<td>4148</td>
+<td>515821</td>
+<td>113</td>
+<td>30231</td>
+<td>440/414 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-02-01</td>
+<td>18121</td>
+<td>4130</td>
+<td>512666</td>
+<td>115</td>
+<td>29985</td>
+<td>440/406 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2018-01-03</td>
+<td>18046</td>
+<td>4111</td>
+<td>509339</td>
+<td>172</td>
+<td>29731</td>
+<td>440/376 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-12-01</td>
+<td>17919</td>
+<td>4091</td>
+<td>503651</td>
+<td>187</td>
+<td>29461</td>
+<td>440/432 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-11-01</td>
+<td>17796</td>
+<td>4208</td>
+<td>498041</td>
+<td>84</td>
+<td>29195</td>
+<td>440/383 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-10-01</td>
+<td>17741</td>
+<td>4200</td>
+<td>495424</td>
+<td>122</td>
+<td>28956</td>
+<td>440/383 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-09-01</td>
+<td>17646</td>
+<td>4181</td>
+<td>491775</td>
+<td>150</td>
+<td>28699</td>
+<td>440/372 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-08-01</td>
+<td>17474</td>
+<td>4197</td>
+<td>487112</td>
+<td>85</td>
+<td>28389</td>
+<td>440/353 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-07-01</td>
+<td>17297</td>
+<td>4120</td>
+<td>484475</td>
+<td>61</td>
+<td>28163</td>
+<td>440/355 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-06-01</td>
+<td>17253</td>
+<td>4108</td>
+<td>482648</td>
+<td>109</td>
+<td>27969</td>
+<td>440/419 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-05-01</td>
+<td>17108</td>
+<td>4071</td>
+<td>479277</td>
+<td>96</td>
+<td>27649</td>
+<td>440/434 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-04-01</td>
+<td>17055</td>
+<td>4055</td>
+<td>476406</td>
+<td>106</td>
+<td>27320</td>
+<td>440/427 (<a href="../en/ArchWiki_talk:Statistics.html#Number_of_active_users" title="ArchWiki talk:Statistics">?</a>)
+</td>
+</tr>
+<tr>
+<td>2017-03-01</td>
+<td>16970</td>
+<td>4036</td>
+<td>473121</td>
+<td>75</td>
+<td>26966</td>
+<td>462
+</td>
+</tr>
+<tr>
+<td>2017-02-01</td>
+<td>16896</td>
+<td>4026</td>
+<td>471035</td>
+<td>205</td>
+<td>26637</td>
+<td>497
+</td>
+</tr>
+<tr>
+<td>2017-01-01</td>
+<td>16825</td>
+<td>4016</td>
+<td>464671</td>
+<td>91</td>
+<td>26235</td>
+<td>424
+</td>
+</tr>
+<tr>
+<td>2016-12-01</td>
+<td>16759</td>
+<td>3996</td>
+<td>461853</td>
+<td>82</td>
+<td>25912</td>
+<td>444
+</td>
+</tr>
+<tr>
+<td>2016-11-01</td>
+<td>16671</td>
+<td>3980</td>
+<td>459395</td>
+<td>100</td>
+<td>25602</td>
+<td>442
+</td>
+</tr>
+<tr>
+<td>2016-10-01</td>
+<td>16579</td>
+<td>3961</td>
+<td>456293</td>
+<td>120</td>
+<td>25253</td>
+<td>461
+</td>
+</tr>
+<tr>
+<td>2016-09-01</td>
+<td>16492</td>
+<td>3952</td>
+<td>452684</td>
+<td>158</td>
+<td>24948</td>
+<td>463
+</td>
+</tr>
+<tr>
+<td>2016-08-01</td>
+<td>16428</td>
+<td>3965</td>
+<td>447793</td>
+<td>149</td>
+<td>24632</td>
+<td>413
+</td>
+</tr>
+<tr>
+<td>2016-07-01</td>
+<td>16344</td>
+<td>4010</td>
+<td>443181</td>
+<td>87</td>
+<td>24313</td>
+<td>347
+</td>
+</tr>
+<tr>
+<td>2016-06-01</td>
+<td>16256</td>
+<td>3994</td>
+<td>440578</td>
+<td>110</td>
+<td>24211</td>
+<td>415
+</td>
+</tr>
+<tr>
+<td>2016-05-01</td>
+<td>16147</td>
+<td>3978</td>
+<td>437168</td>
+<td>140</td>
+<td>23780</td>
+<td>479
+</td>
+</tr>
+<tr>
+<td>2016-04-01</td>
+<td>16037</td>
+<td>3949</td>
+<td>432690</td>
+<td>178</td>
+<td>23438</td>
+<td>465
+</td>
+</tr>
+<tr>
+<td>2016-03-01</td>
+<td>15911</td>
+<td>3923</td>
+<td>427157</td>
+<td>173</td>
+<td>23093</td>
+<td>483
+</td>
+</tr>
+<tr>
+<td>2016-02-01</td>
+<td>15798</td>
+<td>3896</td>
+<td>422147</td>
+<td>179</td>
+<td>22840</td>
+<td>541
+</td>
+</tr>
+<tr>
+<td>2016-01-01</td>
+<td>15665</td>
+<td>3896</td>
+<td>416595</td>
+<td>106</td>
+<td>22085</td>
+<td>479
+</td>
+</tr>
+<tr>
+<td>2015-12-01</td>
+<td>15595</td>
+<td>3890</td>
+<td>413302</td>
+<td>96</td>
+<td>21749</td>
+<td>437
+</td>
+</tr>
+<tr>
+<td>2015-11-01</td>
+<td>15547</td>
+<td>3893</td>
+<td>410431</td>
+<td>169</td>
+<td>21413</td>
+<td>476
+</td>
+</tr>
+<tr>
+<td>2015-10-01</td>
+<td>15392</td>
+<td>3907</td>
+<td>405199</td>
+<td>182</td>
+<td>21079</td>
+<td>483
+</td>
+</tr>
+<tr>
+<td>2015-09-01</td>
+<td>15179</td>
+<td>3899</td>
+<td>399741</td>
+<td>231</td>
+<td>20738</td>
+<td>490
+</td>
+</tr>
+<tr>
+<td>2015-08-01</td>
+<td>14748</td>
+<td>3865</td>
+<td>392566</td>
+<td>289</td>
+<td>20367</td>
+<td>420
+</td>
+</tr>
+<tr>
+<td>2015-07-01</td>
+<td>14677</td>
+<td>3862</td>
+<td>383616</td>
+<td>130</td>
+<td>20075</td>
+<td>446
+</td>
+</tr>
+<tr>
+<td>2015-06-01</td>
+<td>14589</td>
+<td>3852</td>
+<td>379706</td>
+<td>152</td>
+<td>19793</td>
+<td>493
+</td>
+</tr>
+<tr>
+<td>2015-05-01</td>
+<td>14555</td>
+<td>3874</td>
+<td>375004</td>
+<td>133</td>
+<td>19468</td>
+<td>498
+</td>
+</tr>
+<tr>
+<td>2015-04-01</td>
+<td>14568</td>
+<td>3855</td>
+<td>371000</td>
+<td>161</td>
+<td>19145</td>
+<td>487
+</td>
+</tr>
+<tr>
+<td>2015-03-01</td>
+<td>14469</td>
+<td>4251</td>
+<td>365997</td>
+<td>148</td>
+<td>18818</td>
+<td>492
+</td>
+</tr>
+<tr>
+<td>2015-02-01</td>
+<td>14394</td>
+<td>4256</td>
+<td>361852</td>
+<td>135</td>
+<td>18518</td>
+<td>488
+</td>
+</tr>
+<tr>
+<td>2015-01-01</td>
+<td>14267</td>
+<td>4231</td>
+<td>357677</td>
+<td>243</td>
+<td>18209</td>
+<td>445
+</td>
+</tr>
+<tr>
+<td>2014-12-01</td>
+<td>13974</td>
+<td>4176</td>
+<td>350159</td>
+<td>165</td>
+<td>17934</td>
+<td>452
+</td>
+</tr>
+<tr>
+<td>2014-11-01</td>
+<td>13836</td>
+<td>4119</td>
+<td>345219</td>
+<td>141</td>
+<td>17668</td>
+<td>496
+</td>
+</tr>
+<tr>
+<td>2014-10-01</td>
+<td>13701</td>
+<td>4080</td>
+<td>340836</td>
+<td>165</td>
+<td>17348</td>
+<td>454
+</td>
+</tr>
+<tr>
+<td>2014-09-01</td>
+<td>13550</td>
+<td>4041</td>
+<td>335879</td>
+<td>185</td>
+<td>17036</td>
+<td>450
+</td>
+</tr>
+<tr>
+<td>2014-08-02</td>
+<td>13480</td>
+<td>4005</td>
+<td>330330</td>
+<td>175</td>
+<td>16760</td>
+<td>459
+</td>
+</tr>
+<tr>
+<td>2014-07-01</td>
+<td>13339</td>
+<td>3995</td>
+<td>324727</td>
+<td>170</td>
+<td>16477</td>
+<td>444
+</td>
+</tr>
+<tr>
+<td>2014-06-01</td>
+<td>13177</td>
+<td>3966</td>
+<td>319640</td>
+<td>152</td>
+<td>16172</td>
+<td>468
+</td>
+</tr>
+<tr>
+<td>2014-05-01</td>
+<td>13043</td>
+<td>3909</td>
+<td>314936</td>
+<td>168</td>
+<td>15849</td>
+<td>476
+</td>
+</tr>
+<tr>
+<td>2014-04-01</td>
+<td>12922</td>
+<td>3875</td>
+<td>309901</td>
+<td>179</td>
+<td>15524</td>
+<td>521
+</td>
+</tr>
+<tr>
+<td>2014-03-01</td>
+<td>12858</td>
+<td>3845</td>
+<td>304337</td>
+<td>281</td>
+<td>15178</td>
+<td>497
+</td>
+</tr>
+<tr>
+<td>2014-02-01</td>
+<td>12698</td>
+<td>3825</td>
+<td>296482</td>
+<td>133</td>
+<td>14848 (<a rel="nofollow" class="external text" href="https://lists.archlinux.org/archives/list/arch-general@lists.archlinux.org/message/UTC47TFWBVFJLXBEMU6VPR77R5TMBMG2/">?</a>)</td>
+<td>559
+</td>
+</tr>
+<tr>
+<td>2014-01-01</td>
+<td>12571</td>
+<td>3762</td>
+<td>292358</td>
+<td>196</td>
+<td>20918</td>
+<td>467
+</td>
+</tr>
+<tr>
+<td>2013-12-01</td>
+<td>12450</td>
+<td>3744</td>
+<td>286293</td>
+<td>160</td>
+<td>20604</td>
+<td>473
+</td>
+</tr>
+<tr>
+<td>2013-11-01</td>
+<td>12339</td>
+<td>3707</td>
+<td>281501</td>
+<td>120</td>
+<td>20304</td>
+<td>463
+</td>
+</tr>
+<tr>
+<td>2013-10-01</td>
+<td>12248</td>
+<td>3686</td>
+<td>277785</td>
+<td>128</td>
+<td>20021</td>
+<td>466
+</td>
+</tr>
+<tr>
+<td>2013-09-01</td>
+<td>12177</td>
+<td>3673</td>
+<td>273935</td>
+<td>138</td>
+<td>19755</td>
+<td>457
+</td>
+</tr>
+<tr>
+<td>2013-08-01</td>
+<td>12098</td>
+<td>3654</td>
+<td>269663</td>
+<td>147</td>
+<td>19449</td>
+<td>461
+</td>
+</tr>
+<tr>
+<td>2013-07-02</td>
+<td>12017</td>
+<td>3667</td>
+<td>265261</td>
+<td>163</td>
+<td>19145</td>
+<td>534
+</td>
+</tr>
+<tr>
+<td>2013-06-01</td>
+<td>11944</td>
+<td>3634</td>
+<td>260207</td>
+<td>139</td>
+<td>18812</td>
+<td>485
+</td>
+</tr>
+<tr>
+<td>2013-05-01</td>
+<td>11855</td>
+<td>3620</td>
+<td>255897</td>
+<td>111</td>
+<td>18503</td>
+<td>527
+</td>
+</tr>
+<tr>
+<td>2013-04-01</td>
+<td>11828</td>
+<td>3612</td>
+<td>252564</td>
+<td>124</td>
+<td>18185</td>
+<td>521
+</td>
+</tr>
+<tr>
+<td>2013-03-03</td>
+<td>11748</td>
+<td>3566</td>
+<td>248959</td>
+<td>104</td>
+<td>17862</td>
+<td>556
+</td>
+</tr>
+<tr>
+<td>2013-02-01</td>
+<td>11637</td>
+<td>3516</td>
+<td>245840</td>
+<td>113</td>
+<td>17548</td>
+<td>509
+</td>
+</tr>
+<tr>
+<td>2013-01-01</td>
+<td>11513</td>
+<td>3459</td>
+<td>242343</td>
+<td>160</td>
+<td>17290</td>
+<td>494
+</td>
+</tr>
+<tr>
+<td>2012-12-01</td>
+<td>11360</td>
+<td>3401</td>
+<td>237391</td>
+<td>152</td>
+<td>17008</td>
+<td>579
+</td>
+</tr>
+<tr>
+<td>2012-11-02</td>
+<td>11209</td>
+<td>3297</td>
+<td>232994</td>
+<td>213</td>
+<td>16731</td>
+<td>593
+</td>
+</tr>
+<tr>
+<td>2012-09-30</td>
+<td>11075</td>
+<td>3240</td>
+<td>225963</td>
+<td>188</td>
+<td>16358</td>
+<td>540
+</td>
+</tr>
+<tr>
+<td>2012-09-02</td>
+<td>10924</td>
+<td>3197</td>
+<td>220709</td>
+<td>165</td>
+<td>16082</td>
+<td>524
+</td>
+</tr>
+<tr>
+<td>2012-07-30</td>
+<td>10748</td>
+<td>3126</td>
+<td>215249</td>
+<td>134</td>
+<td>15736</td>
+<td>501
+</td>
+</tr>
+<tr>
+<td>2012-06-28</td>
+<td>10615</td>
+<td>3090</td>
+<td>210974</td>
+<td>294</td>
+<td>15429</td>
+<td>407
+</td>
+</tr>
+<tr>
+<td>2012-05-27</td>
+<td>10488</td>
+<td>3404</td>
+<td>201580</td>
+<td>139</td>
+<td>15179</td>
+<td>442
+</td>
+</tr>
+<tr>
+<td>2012-04-26</td>
+<td>10748</td>
+<td>3469</td>
+<td>197285</td>
+<td>234</td>
+<td>14878</td>
+<td>461
+</td>
+</tr>
+<tr>
+<td>2012-03-25</td>
+<td>10468</td>
+<td>3475</td>
+<td>189796</td>
+<td>191</td>
+<td>14548</td>
+<td>482
+</td>
+</tr>
+<tr>
+<td>2012-02-24</td>
+<td>10128</td>
+<td>3395</td>
+<td>184080</td>
+<td>-</td>
+<td>14198</td>
+<td>513
+</td>
+</tr>
+</tbody>
+</table>
+<h3><span class="mw-headline" id="Histograms">Histograms</span></h3>
+<p>The evolution of total edits per month:
+</p>
+<p><span typeof="mw:File"><a href="../File:Hist_alledits.svg" class="mw-file-description"><img src="../File:Hist_alledits.svg" decoding="async" width="640" height="480" class="mw-file-element"></a></span>
+</p>
+<p>The evolution of active users count per month:
+</p>
+<p><span typeof="mw:File"><a href="../File:Hist_active_users.svg" class="mw-file-description"><img src="../File:Hist_active_users.svg" decoding="async" width="640" height="480" class="mw-file-element"></a></span>
+</p>
+<h2><span class="mw-headline" id="Maintenance_statistics">Maintenance statistics</span></h2>
+<p>This table shows how many pages are in each <a href="../en/Category:Maintenance.html" title="Category:Maintenance">maintenance category</a>.
+</p>
+<table class="wikitable">
+<tbody>
+<tr>
+<th>Category name
+</th>
+<th>Pages in category
+</th>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Noindexed_pages.html" title="Category:Noindexed pages">Noindexed pages</a>
+</td>
+<td>33
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_flagged_with_Template:Archive.html" title="Category:Pages flagged with Template:Archive">Pages flagged with Template:Archive</a>
+</td>
+<td>6
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_flagged_with_Template:Redirect.html" title="Category:Pages flagged with Template:Redirect">Pages flagged with Template:Redirect</a>
+</td>
+<td>7
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Accuracy.html" title="Category:Pages or sections flagged with Template:Accuracy">Pages or sections flagged with Template:Accuracy</a>
+</td>
+<td>266
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Bad_translation.html" title="Category:Pages or sections flagged with Template:Bad translation">Pages or sections flagged with Template:Bad translation</a>
+</td>
+<td>10
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Expansion.html" title="Category:Pages or sections flagged with Template:Expansion">Pages or sections flagged with Template:Expansion</a>
+</td>
+<td>445
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Laptop_style.html" title="Category:Pages or sections flagged with Template:Laptop style">Pages or sections flagged with Template:Laptop style</a>
+</td>
+<td>324
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Merge.html" title="Category:Pages or sections flagged with Template:Merge">Pages or sections flagged with Template:Merge</a>
+</td>
+<td>206
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Move.html" title="Category:Pages or sections flagged with Template:Move">Pages or sections flagged with Template:Move</a>
+</td>
+<td>26
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Out_of_date.html" title="Category:Pages or sections flagged with Template:Out of date">Pages or sections flagged with Template:Out of date</a>
+</td>
+<td>257
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Style.html" title="Category:Pages or sections flagged with Template:Style">Pages or sections flagged with Template:Style</a>
+</td>
+<td>255
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_or_sections_flagged_with_Template:Translateme.html" title="Category:Pages or sections flagged with Template:Translateme">Pages or sections flagged with Template:Translateme</a>
+</td>
+<td>64
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_using_duplicate_arguments_in_template_calls.html" title="Category:Pages using duplicate arguments in template calls">Pages using duplicate arguments in template calls</a>
+</td>
+<td>1
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_using_invalid_self-closed_HTML_tags.html" title="Category:Pages using invalid self-closed HTML tags">Pages using invalid self-closed HTML tags</a>
+</td>
+<td>0
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_broken_file_links.html" title="Category:Pages with broken file links">Pages with broken file links</a>
+</td>
+<td>0
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_broken_package_links.html" title="Category:Pages with broken package links">Pages with broken package links</a>
+</td>
+<td>382
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_broken_section_links.html" title="Category:Pages with broken section links">Pages with broken section links</a>
+</td>
+<td>28
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_broken_templates.html" title="Category:Pages with broken templates">Pages with broken templates</a>
+</td>
+<td>0
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_dead_links.html" title="Category:Pages with dead links">Pages with dead links</a>
+</td>
+<td>564
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_links_to_archived_pages.html" title="Category:Pages with links to archived pages">Pages with links to archived pages</a>
+</td>
+<td>2
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_ignored_display_titles.html" title="Category:Pages with ignored display titles">Pages with ignored display titles</a>
+</td>
+<td>5
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Pages_with_missing_package_links.html" title="Category:Pages with missing package links">Pages with missing package links</a>
+</td>
+<td>37
+</td>
+</tr>
+<tr>
+<td>
+<a href="../en/Category:Sections_flagged_with_Template:Remove.html" title="Category:Sections flagged with Template:Remove">Sections flagged with Template:Remove</a>
+</td>
+<td>87
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">
+<a href="../Special:Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../en/Category:ArchWiki.html" title="Category:ArchWiki">ArchWiki</a></li></ul>
+</div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" style="margin: 0">
+	<ul id="footer-info">
+	<li data-nosnippet="">Retrieved from "<a dir="ltr" href="https://wiki.archlinux.org/index.php?title=ArchWiki:Statistics&amp;oldid=813638">https://wiki.archlinux.org/index.php?title=ArchWiki:Statistics&amp;oldid=813638</a>"</li>
+<li id="footer-info-lastmod"> This page was last edited on 1 August 2024, at 06:05.</li>
+	<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.3 or later</a> unless otherwise noted.</li>
+<br>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://terms.archlinux.org/docs/privacy-policy/">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="../en/ArchWiki:About.html">About ArchWiki</a></li>
+	<li id="footer-places-disclaimers"><a href="../en/ArchWiki:General_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-archwiki-code-of-conduct"><a href="https://terms.archlinux.org/docs/code-of-conduct/" class="extiw" title="archlinux-service-agreements:code-of-conduct">Code of conduct</a></li>
+	<li id="footer-places-archwiki-terms-of-service"><a href="https://terms.archlinux.org/docs/terms-of-service/" class="extiw" title="archlinux-service-agreements:terms-of-service">Terms of service</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.gnu.org/copyleft/fdl.html"><img src="/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.3 or later" width="88" height="31" loading="lazy"></a></li>
+	<li id="footer-poweredbyico"><img src="/resources/assets/poweredby_mediawiki_88x31.png" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+</body>
+</html>
