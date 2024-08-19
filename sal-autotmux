@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z "$TMUX" ]; then
+    nona=$(tmux list-sessions | grep -v attached | cut -d : -f 1 | head -n 1)
+    echo $nona
+    if [[ -n "$nona" ]]; then
+        tmux attach -t $nona
+    else
+        tmux new-session
+    fi
+fi

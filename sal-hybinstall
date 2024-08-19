@@ -1,0 +1,205 @@
+#!/bin/bash
+
+# Este script espera que você já tenha descompactado o projeto Hybris.
+# Por favor, altere as variáveis PROJECT_DIR e DUMP_FILE.
+# Ou use os argumentos para passar as variáveis manualmente.
+
+help() {
+    echo "Uso: $(basename "$0") [OPCOES]"
+    echo "[-p --project-dir <path>]"
+    echo "[-d --dump-file <path>]"
+    echo "[-H --hybris-dir <path>]"
+    echo "[-c --config-dir <path>]"
+    echo "[-s --custom-dir <path>]"
+    echo "[-P --platform-dir <path>]"
+    echo "[-e --extension-dir <path>]"
+    echo "[-h --help]"
+}
+
+PROJECT_DIR="$HOME/Clients/pearson/pearson-2205"
+DUMP_FILE="$HOME/Clients/pearson/dump.sql"
+
+HYBRIS_DIR="$PROJECT_DIR/hybris"
+CONFIG_DIR="$HYBRIS_DIR/config"
+CUSTOM_DIR="$HYBRIS_DIR/bin/custom"
+PLATFORM_DIR="$HYBRIS_DIR/bin/platform"
+EXTENSION_DIR="$PROJECT_DIR/extensions"
+
+hybrisdirset=0
+configdirset=0
+customdirset=0
+platformdirset=0
+extensiondirset=0
+
+# Parse options
+while (( "$#" )); do
+    case "$1" in
+        -p|--project-dir)
+            PROJECT_DIR="$2"
+            shift 2 ;;
+        -d|--dump-file)
+            DUMP_FILE="$2"
+            shift 2 ;;
+        -H|--hybris-dir)
+            HYBRIS_DIR="$2"
+            hybrisdirset=1
+            shift 2 ;;
+        -c|--config-dir)
+            CONFIG_DIR="$2"
+            configdirset=1
+            shift 2 ;;
+        -s|--custom-dir)
+            CUSTOM_DIR="$2"
+            customdirset=1
+            shift 2 ;;
+        -P|--platform-dir)
+            PLATFORM_DIR="$2"
+            platformdirset=1
+            shift 2 ;;
+        -e|--extension-dir)
+            EXTENSION_DIR="$2"
+            extensiondirset=1
+            shift 2 ;;
+        -h|--help)
+            help
+            exit 0 ;;
+        --)
+            shift
+            break ;;
+        -*|--*=)
+            echo "Error $1" >&2
+            exit 1 ;;
+        *)
+            echo "$1!"
+            shift ;;
+    esac
+done
+
+[ $hybrisdirset -eq 0 ] && HYBRIS_DIR="$PROJECT_DIR/hybris"
+[ $configdirset -eq 0 ] && CONFIG_DIR="$HYBRIS_DIR/config"
+[ $customdirset -eq 0 ] && CUSTOM_DIR="$HYBRIS_DIR/bin/custom"
+[ $platformdirset -eq 0 ] && PLATFORM_DIR="$HYBRIS_DIR/bin/platform"
+[ $extensiondirset -eq 0 ] && EXTENSION_DIR="$PROJECT_DIR/extensions"
+
+
+echo "Project Directory: $PROJECT_DIR"
+echo "Dump File: $DUMP_FILE"
+echo "Hybris Directory: $HYBRIS_DIR"
+echo "Config Directory: $CONFIG_DIR"
+echo "Custom Directory: $CUSTOM_DIR"
+echo "Extension Directory: $EXTENSION_DIR"
+echo "Platform Directory: $PLATFORM_DIR"
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+NC='\033[0m'
+
+# Helper functions
+echo_error() {
+    echo -e "${RED}ERROR: ${@}${NC}"
+    exit 1
+}
+
+echo_success() {
+    echo -e "${GREEN}${@}${NC}"
+}
+
+echo_info() {
+    echo -e "${BLUE}${@}${NC}"
+}
+
+echo_question() {
+    echo -e "${PURPLE}${@}${NC}"
+}
+
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+get_java_locations() {
+    JAVA_POSSIBLES_LOCATIONS=$(find / -name 'javac' 2>/dev/null | grep 'bin' | sort -u | sed -e 's|/bin.*$||')
+    echo "$JAVA_POSSIBLES_LOCATIONS"
+}
+
+ask(){
+    echo_question "$1"
+    read -p "(s/[Nn]): " -r
+}
+
+link() {
+    ln -s "$1" "$2"
+}
+
+config_mysql() {
+    echo_info "CONFIGURANDO MYSQL"
+
+    read -p "Mysql User: " mysql_user
+    read -p "Mysql Senha: " mysql_password
+    read -p "Mysql Database: " mysql_database
+
+    echo_info "CRIANDO DATABASE"
+    mysql -u "$mysql_user" --password="$mysql_password" -e "CREATE DATABASE IF NOT EXISTS ${mysql_database}" \
+        && echo_success "DATABASE CRIADO"
+
+    if ! command_exists pv; then
+        echo_info "INSTALANDO PIPEVIEWER"
+        sudo apt-get install -y pv
+    else
+        echo_success "PIPEVIEWER JÁ INSTALLADO"
+    fi
+
+
+    ask "Deseja fazer o dump ?"
+    [[ $REPLY =~ ^[Ss]$ ]] && echo_info "DUMPING DATABASE" && pv "$DUMP_FILE" | mysql -u "$mysql_user" --password="$mysql_password" "$mysql_database" \
+        && echo_success "DATABASE DUMPED" 
+
+    echo "ALTERANDO CONFIGURACOES DO MYSQL NO local.properties"
+    sed -i "/^db\.url=/c\db.url=jdbc:mysql://localhost/${mysql_database}?useSSL=false&allowPublicKeyRetrieval=true" "$CONFIG_DIR/local.properties"
+    sed -i "/^db\.username=/c\db.username=${mysql_user}" "$CONFIG_DIR/local.properties"
+    sed -i "/^db\.password=/c\db.password=${mysql_password}" "$CONFIG_DIR/local.properties"
+}
+
+config_ant_env(){
+    echo_info "CONFIGURANDO ANT ENVIRONMENT"
+
+    echo_info "PESQUISANDO JAVA"
+    JAVA_POSSIBLES_LOCATIONS=$(get_java_locations)
+
+    if [[ -z "$JAVA_POSSIBLES_LOCATIONS" ]]; then
+        echo_info "NENHUM JAVA ENCONTRADO"
+        return 1
+    fi
+
+    if ! command_exists fzf; then
+        echo_question "ESCOLHA UM JAVA: "
+        select JAVA_VERSION in $JAVA_POSSIBLES_LOCATIONS; do
+            break
+        done
+    else
+         JAVA_VERSION=$(echo "$JAVA_POSSIBLES_LOCATIONS" | fzf --height=40% --prompt="ESCOLHA UM JAVA: ")
+    fi
+
+    if [[ -n "$JAVA_VERSION" ]]; then
+        sed -i "/^export JAVA_HOME=/c\export JAVA_HOME=$JAVA_VERSION" "$PLATFORM_DIR/setantenv.sh"
+        sed -i "/^export PATH=/c\export PATH=$JAVA_VERSION/bin:\$PATH" "$PLATFORM_DIR/setantenv.sh"
+        echo_success "ANT ENVIRONMENT CONFIGURADO"
+    fi
+}
+
+ask "Configurar mysql?"
+[[ $REPLY =~ ^[Ss]$ ]] && config_mysql
+
+ask "Configurar ant env?"
+[[ $REPLY =~ ^[Ss]$ ]] && config_ant_env
+
+#execute only if custom directory is empty
+if [ -z "$(ls -A "$CUSTOM_DIR")" ]; then
+    ask "Linkar extensions com custom?"
+    [[ $REPLY =~ ^[Ss]$ ]] && link "$EXTENSION_DIR" ${CUSTOM_DIR}
+else
+    echo_warning "Custom está populado, se deseja linkar, delete o custom primeiro"
+fi
+
+echo_success "Instalado com sucesso!"

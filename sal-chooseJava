@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+NC='\033[0m'
+
+# Helper functions
+echo_error() {
+    echo -e "${RED}ERROR: ${@}${NC}"
+    exit 1
+}
+
+echo_success() {
+    echo -e "${GREEN}${@}${NC}"
+}
+
+echo_info() {
+    echo -e "${BLUE}${@}${NC}"
+}
+
+echo_question() {
+    echo -e "${PURPLE}${@}${NC}"
+}
+
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+get_java_locations() {
+    JAVA_POSSIBLES_LOCATIONS=$(find / -name 'javac' 2>/dev/null | grep 'bin' | sort -u | sed -e 's|/bin.*$||')
+    echo "$JAVA_POSSIBLES_LOCATIONS"
+}
+
+ask(){
+    echo_question "$1"
+    read -p "(s/[Nn]): " -r
+}
+
+link() {
+    ln -s "$1" "$2"
+}
+
+
+echo_info "PESQUISANDO JAVA"
+JAVA_POSSIBLES_LOCATIONS=$(get_java_locations)
+
+if [[ -z "$JAVA_POSSIBLES_LOCATIONS" ]]; then
+    echo_info "NENHUM JAVA ENCONTRADO"
+    return 1
+fi
+
+if ! command_exists fzf; then
+    echo_question "ESCOLHA UM JAVA: "
+    select JAVA_VERSION in $JAVA_POSSIBLES_LOCATIONS; do
+        break
+    done
+else
+     JAVA_VERSION=$(echo "$JAVA_POSSIBLES_LOCATIONS" | fzf --height=40% --prompt="ESCOLHA UM JAVA: ")
+fi
+
+echo "$JAVA_VERSION"
+

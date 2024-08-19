@@ -1,0 +1,37 @@
+mkdir ~/.fonts
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+NC='\033[0m'
+
+echo_error() {
+    echo "${RED}ERROR: ${@}${NC}"
+    exit 1
+}
+echo_success() {
+    echo "${GREEN}${@}${NC}"
+}
+echo_info() {
+    echo "${BLUE}${@}${NC}"
+}
+echo_question() {
+    echo "${PURPLE}${@}${NC}"
+}
+
+get_results(){
+    curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest | jq -r '.assets[].name' | cut -d. -f1 | sort -ur | uniq
+}
+
+echo_info "[-] Download fonts [-]"
+echo_question "Choose your font: "
+choice=$(get_results | fzf)
+echo_info $choice
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/"$choice".zip
+unzip "$choice".zip -d ~/.fonts
+rm "$choice".zip
+ls -A ~/.fonts/ | grep -v ".ttf" | xargs -I{} rm ~/.fonts/{}
+
+fc-cache -fv
+echo_success "done!"
