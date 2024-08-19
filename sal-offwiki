@@ -1,9 +1,10 @@
 #!/bin/env bash
 
-VALID_ARGS=$(getopt -o l:gh --long language:,shouldUseGui,help -- "$@")
+VALID_ARGS=$(getopt -o l:r:gh --long language:,runner,shouldUseGui,help -- "$@")
 eval set -- "$VALID_ARGS"
 
 language=""
+runner=w3m
 shouldUseGui=0
 
 while [ : ]; do
@@ -19,6 +20,10 @@ while [ : ]; do
     -h | --help)
         echo "Usage: $(basename $0) [-l|--language] <language> [-g|--should-use-gui]"
         exit 0
+        ;;
+    -r | --runner)
+        runner=$2
+        shift 2
         ;;
     --) 
         shift; 
@@ -42,5 +47,5 @@ file=$(fd . $path -t f -e ".html" | rev | cut -d'/' -f1 | rev | fzf)
 if [[ $shouldUseGui -eq 1 ]]; then
     xdg-open $path/$file&
 else
-    w3m $path/$file
+    $runner $path/$file
 fi
