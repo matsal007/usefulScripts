@@ -1,0 +1,26 @@
+#!/bin/zsh
+
+centerWidth() {
+	columns=$(tput cols)
+	n=$1
+	h_center=$(( ( ${#n} + columns ) / 2 ))
+	printf "%*s\n" $h_center "$n"
+}
+
+centerHeight() {
+	lines=$(tput lines)
+	v_center=$(( ($lines) / 2 - 1))
+	clear
+	printf "\n%.0s" {0..$v_center}
+}
+
+
+case "$1" in
+	"-h") centerHeight $2
+	;;
+	"-w") centerWidth $2
+	;;
+	*) centerHeight && centerWidth $1
+	;;
+esac
+

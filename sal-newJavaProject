@@ -1,0 +1,38 @@
+#!/bin/bash
+
+me="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
+if [ -z $1 ]; then
+        echo "Usage: ${me} NAMEofMYproject"
+        echo "     Name of project as argument is required."
+        echo "     Exiting"
+        exit 0
+fi
+
+mkdir $1
+cd $1
+
+mkdir ./libs
+mkdir ./out
+mkdir ./src
+mkdir -p ./src/main/java/com/salvadego
+
+mkdir -p ./src/main/java/com/salvadego/$1
+mkdir -p ./src/main/resources
+mkdir -p ./src/main/resources/META-INF
+
+touch ./src/main/resources/META-INF/MANIFEST.FM
+
+touch ./src/main/java/com/salvadego/$1/App.java
+
+touch javacompile
+touch jar-it
+
+touch README.md
+
+printf '#!/bin/bash\njavac -cp ./src/main/java ./src/main/java/com/salvadego/'$1'/*.java -d ./out/\n'>javacompile
+printf '#!/bin/bash\njar cvfm '$1'.jar ./src/main/resources/META-INF/MANIFEST.FM -C ./out/ .\n'>jar-it
+printf 'package com.salvadego.'$1';\npublic class App{\n     public static void main(String args[]){\n     System.out.println("Hello World");\n     }\n}\n'>./src/main/java/com/salvadego/$1/App.java
+printf 'Manifest-Version: 1.0\nClass-Path: .\nMain-Class: com.salvadego.'$1'.App\n\n'>./src/main/resources/META-INF/MANIFEST.FM
+
+chmod +x javacompile
+chmod +x jar-it

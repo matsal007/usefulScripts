@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 mkdir ~/.fonts
 
 RED='\033[0;31m'

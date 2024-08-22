@@ -36,12 +36,12 @@ while [ : ]; do
   esac
 done
 
-if [ -z $language]; then
-    language=$(fd . ~/Documentos/ArchWiki/ -t d -d 1 | rev | cut -d'/' -f2 | rev | fzf)
+if [ -z $language ]; then
+    language=$(fd . ~/Documents/ArchWiki/ -t d -d 1 | rev | cut -d'/' -f2 | rev | fzf)
     echo $language
 fi
 
-path=~/Documentos/ArchWiki/$language
+path=~/Documents/ArchWiki/$language
 file=$(fd . $path -t f -e ".html" | rev | cut -d'/' -f1 | rev | fzf)
 
 if [[ $shouldUseGui -eq 1 ]]; then
