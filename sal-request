@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# A simple CLI tool for making HTTP requests
+
+function show_help() {
+    cat << EOF
+Usage: ${0##*/} [OPTIONS] [URL]
+
+Options:
+  -h, --help       Show this help message and exit
+  -m, --method     Specify the request method (GET, POST, PUT, DELETE)
+  -b, --body       Specify the body for POST/PUT requests (use with a string)
+  -f, --file       Specify a file to read the body from (use with a file path)
+  -H, --header     Specify headers (key:value format)
+
+Examples:
+  ${0##*/} -m GET https://api.example.com/resource
+  ${0##*/} -m POST -b '{"key":"value"}' -H 'Content-Type:application/json' https://api.example.com/resource
+  ${0##*/} -m POST -f body.json -H 'Content-Type:application/json' https://api.example.com/resource
+EOF
+}
+
+# Initialize variables
+method="GET"
+body=""
+file=""
+headers=()
+
+# Parse command-line options
+while [[ "$1" != "" ]]; do
+    case $1 in
+        -h | --help )      show_help; exit ;;
+        -m | --method )    shift; method=$1 ;;
+        -b | --body )      shift; body=$1 ;;
+        -f | --file )      shift; file=$1 ;;
+        -H | --header )    shift; headers+=("$1") ;;
+        * )                url=$1 ;;
+    esac
+    shift
+done
+
+# Check if a file was specified and read its contents into body
+if [[ "$method" == "POST" || "$method" == "PUT" ]]; then
+    if [[ -n "$file" && -f "$file" ]]; then
+        body=$(<"$file")
+    elif [[ -z "$body" ]]; then
+        echo "Error: No body specified. Use -b for string or -f for file." >&2
+        exit 1
+    fi
+fi
+
+# Prepare headers for curl command
+header_string=""
+for header in "${headers[@]}"; do
+    header_string+="-H '$header' "
+done
+
+# Execute the request using curl
+case "$method" in
+    GET)
+        eval "curl $header_string '$url'"
+        ;;
+    POST)
+        eval "curl -X POST $header_string -d '$body' '$url'"
+        ;;
+    PUT)
+        eval "curl -X PUT $header_string -d '$body' '$url'"
+        ;;
+    DELETE)
+        eval "curl -X DELETE $header_string '$url'"
+        ;;
+    *)
+        echo "Unsupported method: $method" >&2
+        exit 1
+        ;;
+esac

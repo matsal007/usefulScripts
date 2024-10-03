@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+import time
+import numpy as np
+import os
+import pandas as pd
+from dotenv import load_dotenv
+from GSSDK.GSSDK import GSRequest
+import argparse
+import json
+import sys
+
+class Logger:
+    def __init__(self, level) -> None:
+        self.level = level
+
+    def log(self, message, level='INFO'):
+        levels = ['NONE', 'ERROR', 'INFO', 'DEBUG']
+        if levels.index(self.level) >= levels.index(level):
+            sys.stderr.write(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}][{level}] - {message}\n")
+
+load_dotenv()
+apiKey = os.getenv("API_KEY")
+secretKey = os.getenv("SECRET_KEY")
+userKey = os.getenv("USER_KEY")
+method = "accounts.search"
+
+def fetch_accounts(query, paginate, logger, limit=None):
+    all_accounts = {}
+    cursor_id = None
+    total_fetched = 0
+
+    while True:
+        if cursor_id is None:
+            params = {
+                "query": query,
+                "openCursor": paginate  
+            }
+            logger.log("Sending initial request...")
+        else:
+            logger.log(f"Sending request with cursor ID: {cursor_id}")
+            params = {
+                "cursorId": cursor_id
+            }
+
+        request = GSRequest(apiKey, secretKey, method, params, True, userKey)
+        response = request.send()
+
+        if response.errorCode == 0:
+            json_data = response.getData()
+            results = json_data.get("results", [])
+            if not results:
+                break
+
+            for account in results:
+                uid = account.get('UID')
+                if uid not in all_accounts:
+                    all_accounts[uid] = account
+                    total_fetched += 1
+                if limit and total_fetched >= limit:
+                    logger.log(f"Limit of {limit} reached. Stopping fetch.")
+                    break
+            
+            if limit and total_fetched >= limit:
+                break
+
+            logger.log(f"Total unique accounts so far: {len(all_accounts)}")
+            if paginate:
+                cursor_id = json_data.get("nextCursorId")
+                if not cursor_id:
+                    break
+            else:
+                break  
+        else:
+            logger.log(f"Error: {response.errorMessage}", level='ERROR')
+            break
+
+    return pd.json_normalize(list(all_accounts.values()))
+
+def save_to_csv(dataframe, output):
+    if output == '-':
+        json_data = df_to_formatted_json(dataframe)
+        print(json.dumps(json_data))
+    else:
+        dataframe.to_csv(output, index=False)
+        print(f'Total unique accounts retrieved: {len(dataframe)}. Data saved to {output}')
+
+def main():
+    parser = argparse.ArgumentParser(description='SQL Tool CLI for fetching accounts.')
+    parser.add_argument('query', type=str, help='SQL query to execute')
+    parser.add_argument('--paginate', action='store_true', help='Enable pagination for results')
+    parser.add_argument('--limit', type=int, help='Maximum number of results to fetch')
+    parser.add_argument('--output', type=str, default='-', help='Output file path. Use -, or '' For stdout ')
+    parser.add_argument('--log-level', type=str, choices=['NONE', 'ERROR', 'INFO', 'DEBUG'], default='NONE', help='Log level')
+
+    args = parser.parse_args()
+    logger = Logger(args.log_level)
+    accounts_df = fetch_accounts(args.query, args.paginate, logger, args.limit)
+    save_to_csv(accounts_df, args.output)
+
+
+def make_formatted_dict(my_dict, key_arr, val):
+    current = my_dict
+    for i in range(len(key_arr)):
+        key = key_arr[i]
+        if key not in current:
+            if i == len(key_arr) - 1:
+                current[key] = val
+            else:
+                current[key] = {}
+        else:
+            if not isinstance(current[key], dict):
+                raise ValueError("Dictionary key already occupied")
+        current = current[key]
+    return my_dict
+
+def remove_empties_from_dict(a_dict):
+    new_dict = {}
+    for k, v in a_dict.items():
+        if isinstance(v, dict):
+            v = remove_empties_from_dict(v)
+        if v not in [None, np.nan, ""]:
+            new_dict[k] = v
+    return new_dict
+
+def df_to_formatted_json(df, sep="."):
+    result = []
+    for _, row in df.iterrows():
+        parsed_row = {}
+        for idx, val in row.items():
+            keys = idx.split(sep)
+            parsed_row = make_formatted_dict(parsed_row, keys, val)
+        result.append(remove_empties_from_dict(parsed_row))
+    return result
+
+if __name__ == "__main__":
+    main()
